@@ -1,0 +1,9 @@
+description,n,pct_of_valid_maternal_age
+Total live births,72343,644.1
+Live births with valid maternal age,11231,100
+Records with valid age AND birthweight (LBW sample),9359,83.3
+Discarded for LBW (Missing/invalid birthweight),1872,16.7
+Records with valid SGA classification,9213,82
+Discarded for SGA (Missing BW),1841,16.4
+Discarded for SGA (Missing GA),146,1.3
+Discarded for SGA (Missing both BW and GA),31,0.3

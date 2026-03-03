@@ -1,0 +1,16 @@
+category,explanation,n,total,percentage,classification,facility
+ELBW,Included in analysis,1163,35220,3.3,Birthweight,Overall
+VLBW,Included in analysis,3615,35220,10.3,Birthweight,Overall
+LBW,Included in analysis,10185,35220,28.9,Birthweight,Overall
+NBW,Included in analysis,18846,35220,53.5,Birthweight,Overall
+HBW,Included in analysis,1186,35220,3.4,Birthweight,Overall
+Discarded,Missing or invalid birth weight,225,35220,0.6,Birthweight,Overall
+Total,All admissions considered,35220,35220,100,Birthweight,Overall
+Term-AGA,Included in analysis,14106,35220,40.1,SGA,Overall
+Term-SGA,Included in analysis,7136,35220,20.3,SGA,Overall
+Preterm-AGA,Included in analysis,9059,35220,25.7,SGA,Overall
+Preterm-SGA,Included in analysis,4227,35220,12,SGA,Overall
+Missing BW,Missing BW,220,35220,0.6,SGA,Overall
+Missing GA,Missing GA,467,35220,1.3,SGA,Overall
+Missing both BW and GA,Missing both BW and GA,5,35220,0,SGA,Overall
+Total,All admissions considered,35220,35220,100,SGA,Overall

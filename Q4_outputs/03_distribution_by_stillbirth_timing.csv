@@ -1,0 +1,26 @@
+sb_timing,category,explanation,n,percentage,classification
+Early stillbirth (22-27+6w),ELBW,Included in analysis,528,76.0806916426513,Birthweight
+Early stillbirth (22-27+6w),VLBW,Included in analysis,92,13.256484149855908,Birthweight
+Early stillbirth (22-27+6w),LBW,Included in analysis,16,2.3054755043227666,Birthweight
+Early stillbirth (22-27+6w),HBW,Included in analysis,1,0.1440922190201729,Birthweight
+Early stillbirth (22-27+6w),Discarded,Missing or invalid birth weight,57,8.213256484149856,Birthweight
+Early stillbirth (22-27+6w),Total,All deliveries considered,694,100,Birthweight
+Late stillbirth (>=28w),ELBW,Included in analysis,264,8.125577100646353,Birthweight
+Late stillbirth (>=28w),VLBW,Included in analysis,438,13.48107109879963,Birthweight
+Late stillbirth (>=28w),LBW,Included in analysis,977,30.070791012619267,Birthweight
+Late stillbirth (>=28w),NBW,Included in analysis,1363,41.951369652200675,Birthweight
+Late stillbirth (>=28w),HBW,Included in analysis,47,1.4465989535241612,Birthweight
+Late stillbirth (>=28w),Discarded,Missing or invalid birth weight,160,4.924592182209911,Birthweight
+Late stillbirth (>=28w),Total,All deliveries considered,3249,100,Birthweight
+Early stillbirth (22-27+6w),Preterm-AGA,Included in analysis,352,50.720461095100866,SGA
+Early stillbirth (22-27+6w),Preterm-SGA,Included in analysis,285,41.066282420749275,SGA
+Early stillbirth (22-27+6w),Missing BW,Missing BW,57,8.213256484149856,SGA
+Early stillbirth (22-27+6w),Total,All deliveries considered,694,100,SGA
+Late stillbirth (>=28w),Term-AGA,Included in analysis,814,25.05386272699292,SGA
+Late stillbirth (>=28w),Term-SGA,Included in analysis,568,17.482302246845183,SGA
+Late stillbirth (>=28w),Preterm-AGA,Included in analysis,1005,30.932594644506,SGA
+Late stillbirth (>=28w),Preterm-SGA,Included in analysis,679,20.89873807325331,SGA
+Late stillbirth (>=28w),Missing BW,Missing BW,159,4.893813481071098,SGA
+Late stillbirth (>=28w),Missing GA,Missing GA,23,0.7079101261926747,SGA
+Late stillbirth (>=28w),Missing both BW and GA,Missing both BW and GA,1,0.03077870113881194,SGA
+Late stillbirth (>=28w),Total,All deliveries considered,3249,100,SGA

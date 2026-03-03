@@ -1,0 +1,31 @@
+description,n,percentage_of_total
+Total deliveries (all births),77666,100
+Total stillbirths (all gestations),4379,5.6
+Stillbirths >= 22 weeks,3943,5.1
+Stillbirths with valid birthweight (LBW sample size),3726,94.5
+Discarded for LBW (Missing/invalid birthweight),217,5.5
+Stillbirths with valid SGA classification,3703,93.9
+Discarded for SGA (Missing BW),216,5.5
+Discarded for SGA (Missing GA),23,0.6
+Discarded for SGA (Missing both BW and GA),1,0
+,NA,NA
+Early stillbirths (22-27+6 weeks),694,17.6
+Late stillbirths (>=28 weeks),3249,82.4
+,NA,NA
+KCH - Total deliveries,9696,12.5
+KCH - Stillbirths >= 22w,483,5
+KCH - LBW sample size,325,67.3
+KCH - Discarded for LBW,158,32.7
+KCH - SGA sample size,966,200
+KCH - Discarded for SGA (Missing BW),157,32.5
+KCH - Discarded for SGA (Missing GA),2,0.4
+KCH - Discarded for SGA (Missing both BW and GA),1,0.2
+,NA,NA
+SMCH - Total deliveries,67970,87.5
+SMCH - Stillbirths >= 22w,3460,5.1
+SMCH - LBW sample size,3401,98.3
+SMCH - Discarded for LBW,59,1.7
+SMCH - SGA sample size,6920,200
+SMCH - Discarded for SGA (Missing BW),59,1.7
+SMCH - Discarded for SGA (Missing GA),21,0.6
+SMCH - Discarded for SGA (Missing both BW and GA),0,0

@@ -1,0 +1,16 @@
+category,explanation,n_total,n_inborn,n_outborn,n_unknown,pct_inborn,pct_outborn,pct_unknown,facility,classification
+ELBW,Included in analysis,1163,829,315,19,71.3,27.1,1.6,Overall,Birthweight
+VLBW,Included in analysis,3615,2292,1303,20,63.4,36,0.6,Overall,Birthweight
+LBW,Included in analysis,10185,6863,3152,170,67.4,30.9,1.7,Overall,Birthweight
+NBW,Included in analysis,18846,12614,5852,380,66.9,31.1,2,Overall,Birthweight
+HBW,Included in analysis,1186,980,181,25,82.6,15.3,2.1,Overall,Birthweight
+Discarded,Missing or invalid birth weight,225,106,117,2,47.1,52,0.9,Overall,Birthweight
+Total,All admissions considered,35220,23684,10920,616,67.2,31,1.7,Overall,Birthweight
+Term-AGA,Included in analysis,14106,9344,4495,267,66.2,31.9,1.9,Overall,SGA
+Term-SGA,Included in analysis,7136,4903,2080,153,68.7,29.1,2.1,Overall,SGA
+Preterm-AGA,Included in analysis,9059,6255,2689,115,69,29.7,1.3,Overall,SGA
+Preterm-SGA,Included in analysis,4227,2716,1454,57,64.3,34.4,1.3,Overall,SGA
+Missing BW,Missing BW,220,101,117,2,45.9,53.2,0.9,Overall,SGA
+Missing GA,Missing GA,467,360,85,22,77.1,18.2,4.7,Overall,SGA
+Missing both BW and GA,Missing both BW and GA,5,5,0,0,100,0,0,Overall,SGA
+Total,All admissions considered,35220,23684,10920,616,67.2,31,1.7,Overall,SGA

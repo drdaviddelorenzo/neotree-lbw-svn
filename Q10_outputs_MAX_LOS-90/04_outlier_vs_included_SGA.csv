@@ -1,0 +1,12 @@
+group,category,n,total_in_group,percentage,mean_los,classification
+Included (<=90d),Term-AGA,11177,24905,44.9,4.6,SGA
+Included (<=90d),Term-SGA,5302,24905,21.3,5.1,SGA
+Included (<=90d),Preterm-AGA,5690,24905,22.8,10.5,SGA
+Included (<=90d),Preterm-SGA,2350,24905,9.4,15,SGA
+Included (<=90d),Missing BW,150,24905,0.6,8.4,SGA
+Included (<=90d),Missing GA,234,24905,0.9,5.6,SGA
+Included (<=90d),Missing both BW and GA,2,24905,0,8.5,SGA
+Outlier (>90d),Term-AGA,40,104,38.5,266.7,SGA
+Outlier (>90d),Term-SGA,22,104,21.2,195.9,SGA
+Outlier (>90d),Preterm-AGA,30,104,28.8,206,SGA
+Outlier (>90d),Preterm-SGA,12,104,11.5,208.2,SGA

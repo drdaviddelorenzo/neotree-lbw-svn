@@ -1,0 +1,30 @@
+facility,category,explanation,n,percentage,classification
+KCH,ELBW,Included in analysis,40,8.281573498964804,Birthweight
+KCH,VLBW,Included in analysis,81,16.77018633540373,Birthweight
+KCH,LBW,Included in analysis,114,23.60248447204969,Birthweight
+KCH,NBW,Included in analysis,88,18.219461697722565,Birthweight
+KCH,HBW,Included in analysis,2,0.4140786749482402,Birthweight
+KCH,Discarded,Missing or invalid birth weight,158,32.71221532091098,Birthweight
+KCH,Total,All deliveries considered,483,100,Birthweight
+SMCH,ELBW,Included in analysis,752,21.734104046242773,Birthweight
+SMCH,VLBW,Included in analysis,449,12.976878612716764,Birthweight
+SMCH,LBW,Included in analysis,879,25.40462427745665,Birthweight
+SMCH,NBW,Included in analysis,1275,36.84971098265896,Birthweight
+SMCH,HBW,Included in analysis,46,1.3294797687861273,Birthweight
+SMCH,Discarded,Missing or invalid birth weight,59,1.705202312138728,Birthweight
+SMCH,Total,All deliveries considered,3460,100,Birthweight
+KCH,Term-AGA,Included in analysis,50,10.351966873706004,SGA
+KCH,Term-SGA,Included in analysis,27,5.590062111801243,SGA
+KCH,Preterm-AGA,Included in analysis,176,36.43892339544513,SGA
+KCH,Preterm-SGA,Included in analysis,70,14.492753623188406,SGA
+KCH,Missing BW,Missing BW,157,32.50517598343685,SGA
+KCH,Missing GA,Missing GA,2,0.4140786749482402,SGA
+KCH,Missing both BW and GA,Missing both BW and GA,1,0.2070393374741201,SGA
+KCH,Total,All deliveries considered,483,100,SGA
+SMCH,Term-AGA,Included in analysis,764,22.08092485549133,SGA
+SMCH,Term-SGA,Included in analysis,541,15.635838150289016,SGA
+SMCH,Preterm-AGA,Included in analysis,1181,34.13294797687861,SGA
+SMCH,Preterm-SGA,Included in analysis,894,25.838150289017342,SGA
+SMCH,Missing BW,Missing BW,59,1.705202312138728,SGA
+SMCH,Missing GA,Missing GA,21,0.6069364161849711,SGA
+SMCH,Total,All deliveries considered,3460,100,SGA

@@ -1,0 +1,58 @@
+year,category,explanation,n,percentage,classification
+2022,ELBW,Included in analysis,299,25.86505190311419,Birthweight
+2022,VLBW,Included in analysis,146,12.629757785467127,Birthweight
+2022,LBW,Included in analysis,310,26.81660899653979,Birthweight
+2022,NBW,Included in analysis,360,31.141868512110726,Birthweight
+2022,HBW,Included in analysis,11,0.9515570934256056,Birthweight
+2022,Discarded,Missing or invalid birth weight,30,2.5951557093425603,Birthweight
+2022,Total,All deliveries considered,1156,100,Birthweight
+2023,ELBW,Included in analysis,194,21.01841820151679,Birthweight
+2023,VLBW,Included in analysis,146,15.81798483206934,Birthweight
+2023,LBW,Included in analysis,215,23.293607800650054,Birthweight
+2023,NBW,Included in analysis,331,35.861321776814734,Birthweight
+2023,HBW,Included in analysis,14,1.5167930660888407,Birthweight
+2023,Discarded,Missing or invalid birth weight,23,2.4918743228602382,Birthweight
+2023,Total,All deliveries considered,923,100,Birthweight
+2024,ELBW,Included in analysis,153,20.8731241473397,Birthweight
+2024,VLBW,Included in analysis,91,12.414733969986358,Birthweight
+2024,LBW,Included in analysis,187,25.51159618008186,Birthweight
+2024,NBW,Included in analysis,263,35.879945429740786,Birthweight
+2024,HBW,Included in analysis,7,0.9549795361527967,Birthweight
+2024,Discarded,Missing or invalid birth weight,32,4.365620736698499,Birthweight
+2024,Total,All deliveries considered,733,100,Birthweight
+2025,ELBW,Included in analysis,146,12.90893015030946,Birthweight
+2025,VLBW,Included in analysis,147,12.9973474801061,Birthweight
+2025,LBW,Included in analysis,281,24.84526967285588,Birthweight
+2025,NBW,Included in analysis,409,36.162687886825815,Birthweight
+2025,HBW,Included in analysis,16,1.414677276746242,Birthweight
+2025,Discarded,Missing or invalid birth weight,132,11.671087533156498,Birthweight
+2025,Total,All deliveries considered,1131,100,Birthweight
+2022,Term-AGA,Included in analysis,224,19.377162629757784,SGA
+2022,Term-SGA,Included in analysis,165,14.273356401384083,SGA
+2022,Preterm-AGA,Included in analysis,413,35.726643598615915,SGA
+2022,Preterm-SGA,Included in analysis,321,27.768166089965398,SGA
+2022,Missing BW,Missing BW,30,2.5951557093425603,SGA
+2022,Missing GA,Missing GA,3,0.25951557093425603,SGA
+2022,Total,All deliveries considered,1156,100,SGA
+2023,Term-AGA,Included in analysis,199,21.560130010834236,SGA
+2023,Term-SGA,Included in analysis,126,13.651137594799568,SGA
+2023,Preterm-AGA,Included in analysis,337,36.51137594799567,SGA
+2023,Preterm-SGA,Included in analysis,230,24.918743228602384,SGA
+2023,Missing BW,Missing BW,23,2.4918743228602382,SGA
+2023,Missing GA,Missing GA,8,0.8667388949079089,SGA
+2023,Total,All deliveries considered,923,100,SGA
+2024,Term-AGA,Included in analysis,154,21.00954979536153,SGA
+2024,Term-SGA,Included in analysis,113,15.416098226466577,SGA
+2024,Preterm-AGA,Included in analysis,249,33.969986357435204,SGA
+2024,Preterm-SGA,Included in analysis,183,24.965893587994543,SGA
+2024,Missing BW,Missing BW,32,4.365620736698499,SGA
+2024,Missing GA,Missing GA,2,0.2728512960436562,SGA
+2024,Total,All deliveries considered,733,100,SGA
+2025,Term-AGA,Included in analysis,237,20.954907161803714,SGA
+2025,Term-SGA,Included in analysis,164,14.500442086648983,SGA
+2025,Preterm-AGA,Included in analysis,358,31.653404067197172,SGA
+2025,Preterm-SGA,Included in analysis,230,20.335985853227232,SGA
+2025,Missing BW,Missing BW,131,11.582670203359859,SGA
+2025,Missing GA,Missing GA,10,0.8841732979664014,SGA
+2025,Missing both BW and GA,Missing both BW and GA,1,0.08841732979664013,SGA
+2025,Total,All deliveries considered,1131,100,SGA

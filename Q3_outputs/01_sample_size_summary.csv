@@ -1,0 +1,27 @@
+description,n,percentage_of_total
+Total deliveries (all births),77666,100
+Total live births,72343,93.1
+Live births with valid birthweight (LBW sample size),68988,95.4
+Discarded for LBW (Missing/invalid birthweight),3355,4.6
+Live births with valid SGA classification,67160,92.8
+Discarded for SGA (Missing BW),2611,3.6
+Discarded for SGA (Missing GA),1828,2.5
+Discarded for SGA (Missing both BW and GA),744,1
+,NA,NA
+KCH - Total deliveries,9696,12.5
+KCH - Live births,8608,88.8
+KCH - LBW sample size,5353,62.2
+KCH - Discarded for LBW,3255,37.8
+KCH - SGA sample size,17216,200
+KCH - Discarded for SGA (Missing BW),2520,29.3
+KCH - Discarded for SGA (Missing GA),845,9.8
+KCH - Discarded for SGA (Missing both BW and GA),735,8.5
+,NA,NA
+SMCH - Total deliveries,67970,87.5
+SMCH - Live births,63735,93.8
+SMCH - LBW sample size,63635,99.8
+SMCH - Discarded for LBW,100,0.2
+SMCH - SGA sample size,127470,200
+SMCH - Discarded for SGA (Missing BW),91,0.1
+SMCH - Discarded for SGA (Missing GA),983,1.5
+SMCH - Discarded for SGA (Missing both BW and GA),9,0

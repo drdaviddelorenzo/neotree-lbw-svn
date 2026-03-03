@@ -1,0 +1,20 @@
+facility,category,explanation,n,mean_age,median_age,sd_age,min_age,max_age,classification
+KCH,Discarded,Missing or invalid birth weight,1855,27.7,28,6.1,12,45,Birthweight
+KCH,Total,All deliveries considered,1855,27.7,28,6.1,12,45,Birthweight
+SMCH,ELBW,Included in analysis,59,25,24,6.5,14,41,Birthweight
+SMCH,VLBW,Included in analysis,137,26.2,26,6.6,14,44,Birthweight
+SMCH,LBW,Included in analysis,1063,26.1,25,7.2,14,45,Birthweight
+SMCH,NBW,Included in analysis,7899,25.9,25,6.6,13,47,Birthweight
+SMCH,HBW,Included in analysis,201,29.2,29,6.3,16,43,Birthweight
+SMCH,Discarded,Missing or invalid birth weight,17,27.4,27,6.7,17,40,Birthweight
+SMCH,Total,All deliveries considered,9376,159.8,25,6.7,13,47,Birthweight
+KCH,Missing BW,Missing BW,1824,27.7,28,6.1,12,44,SGA
+KCH,Missing both BW and GA,Missing both BW and GA,31,28,28,6.7,18,45,SGA
+KCH,Total,All deliveries considered,1855,55.7,28,6.1,12,45,SGA
+SMCH,Term-AGA,Included in analysis,5663,26.2,25,6.6,14,47,SGA
+SMCH,Term-SGA,Included in analysis,2395,25.4,24,6.6,13,46,SGA
+SMCH,Preterm-AGA,Included in analysis,927,25.7,24,7.1,14,45,SGA
+SMCH,Preterm-SGA,Included in analysis,228,27,26.5,7.1,15,45,SGA
+SMCH,Missing BW,Missing BW,17,27.4,27,6.7,17,40,SGA
+SMCH,Missing GA,Missing GA,146,26.1,25,6.9,16,45,SGA
+SMCH,Total,All deliveries considered,9376,157.8,25,6.7,13,47,SGA

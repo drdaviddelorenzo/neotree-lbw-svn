@@ -1,0 +1,9 @@
+facility,gender_interval,Term-AGA_NND,Term-AGA_DC,Term-SGA_NND,Term-SGA_DC,Preterm-AGA_NND,Preterm-AGA_DC,Preterm-SGA_NND,Preterm-SGA_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Male,249,1845,116,627,378,1321,261,552,0,0,15,49,5,13,0,0,1024,4407,SGA
+KCH,Female,174,1467,109,530,426,1507,245,550,0,0,13,32,13,7,0,0,980,4093,SGA
+KCH,Unsure,0,6,0,1,3,6,1,1,0,0,1,2,0,0,0,0,5,16,SGA
+KCH,Missing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,SGA
+SMCH,Male,428,4732,369,2449,655,1586,403,701,0,0,8,43,71,136,0,2,1934,9649,SGA
+SMCH,Female,286,3608,297,1928,615,1573,343,661,0,0,5,31,74,94,1,0,1621,7895,SGA
+SMCH,Unsure,0,16,3,8,4,5,4,2,0,0,0,1,0,0,0,0,11,32,SGA
+SMCH,Missing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,SGA

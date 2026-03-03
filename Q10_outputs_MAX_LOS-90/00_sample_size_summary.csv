@@ -1,0 +1,10 @@
+metric,value
+Total Admissions,35220
+Survivors (Alive),26092
+Survivors with Valid LOS,25009
+Excluded Outliers (> 90 days),104
+Final Sample Analyzed,24905
+Discarded for LBW (Missing/invalid birthweight) Survivors,152
+Discarded for SGA (Missing BW) Survivors,150
+Discarded for SGA (Missing GA) Survivors,234
+Discarded for SGA (Missing both BW and GA) Survivors,2

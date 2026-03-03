@@ -1,0 +1,25 @@
+scope,comparison,category,reference,OR,CI_lower,CI_upper,p_value,significant
+Global,LBW category vs NBW,ELBW,NBW,22.688,19.842,25.941,0,Yes
+Global,LBW category vs NBW,HBW,NBW,0.318,0.228,0.445,0,Yes
+Global,LBW category vs NBW,LBW,NBW,1.847,1.716,1.987,0,Yes
+Global,LBW category vs NBW,VLBW,NBW,6.703,6.167,7.285,0,Yes
+Global,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,3.401,3.146,3.676,0,Yes
+Global,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,4.832,4.418,5.285,0,Yes
+Global,SGA category vs Term-AGA,Term-SGA,Term-AGA,1.631,1.487,1.79,0,Yes
+Global,Preterm vs Term,Preterm,Term,3.185,2.999,3.383,0,Yes
+KCH,LBW category vs NBW,ELBW,NBW,12.56,10.267,15.366,0,Yes
+KCH,LBW category vs NBW,HBW,NBW,0.479,0.259,0.885,0.0188,Yes
+KCH,LBW category vs NBW,LBW,NBW,1.312,1.155,1.491,0,Yes
+KCH,LBW category vs NBW,VLBW,NBW,3.693,3.24,4.21,0,Yes
+KCH,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,2.122,1.87,2.409,0,Yes
+KCH,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,3.274,2.836,3.778,0,Yes
+KCH,SGA category vs Term-AGA,Term-SGA,Term-AGA,1.478,1.242,1.759,0,Yes
+KCH,Preterm vs Term,Preterm,Term,2.182,1.971,2.415,0,Yes
+SMCH,LBW category vs NBW,ELBW,NBW,34.234,28.422,41.235,0,Yes
+SMCH,LBW category vs NBW,HBW,NBW,0.288,0.192,0.43,0,Yes
+SMCH,LBW category vs NBW,LBW,NBW,2.18,1.992,2.385,0,Yes
+SMCH,LBW category vs NBW,VLBW,NBW,11.306,10.089,12.67,0,Yes
+SMCH,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,4.516,4.089,4.987,0,Yes
+SMCH,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,6.029,5.372,6.765,0,Yes
+SMCH,SGA category vs Term-AGA,Term-SGA,Term-AGA,1.766,1.58,1.973,0,Yes
+SMCH,Preterm vs Term,Preterm,Term,3.956,3.668,4.266,0,Yes

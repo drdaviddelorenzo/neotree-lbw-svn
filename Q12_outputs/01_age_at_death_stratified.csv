@@ -1,0 +1,16 @@
+category,explanation,n_total_deaths,0-1 days,1-3 days,3-7 days,7-14 days,14-21 days,>21 days,Unknown Age,facility,classification
+ELBW,Included in analysis,803,348,258,94,20,10,21,52,Overall,Birthweight
+VLBW,Included in analysis,1436,323,558,324,106,25,50,50,Overall,Birthweight
+LBW,Included in analysis,1568,312,565,295,161,61,85,89,Overall,Birthweight
+NBW,Included in analysis,1688,425,641,221,130,69,138,64,Overall,Birthweight
+HBW,Included in analysis,37,15,5,9,2,2,3,1,Overall,Birthweight
+Discarded,Missing or invalid birth weight,43,11,11,5,7,2,3,4,Overall,Birthweight
+Total,All deaths considered,5575,1434,2038,948,426,169,300,260,Overall,Birthweight
+Term-AGA,Included in analysis,1137,284,411,150,87,49,104,52,Overall,SGA
+Term-SGA,Included in analysis,894,203,329,144,97,29,56,36,Overall,SGA
+Preterm-AGA,Included in analysis,2081,558,773,360,146,60,87,97,Overall,SGA
+Preterm-SGA,Included in analysis,1257,298,463,274,86,28,48,60,Overall,SGA
+Missing BW,Missing BW,42,10,11,5,7,2,3,4,Overall,SGA
+Missing GA,Missing GA,163,80,51,15,3,1,2,11,Overall,SGA
+Missing both BW and GA,Missing both BW and GA,1,1,0,0,0,0,0,0,Overall,SGA
+Total,All deaths considered,5575,1434,2038,948,426,169,300,260,Overall,SGA

@@ -1,0 +1,31 @@
+facility,outcome,category,explanation,n,mean_temp,classification
+KCH,Alive,Term-AGA,Included in analysis,873,36.69,SGA
+KCH,Alive,Term-SGA,Included in analysis,271,36.4,SGA
+KCH,Alive,Preterm-AGA,Included in analysis,1611,36.16,SGA
+KCH,Alive,Preterm-SGA,Included in analysis,457,35.97,SGA
+KCH,Alive,Missing BW,Missing BW,17,36.01,SGA
+KCH,Alive,Missing GA,Missing GA,9,36.94,SGA
+KCH,Alive,Total,All admissions considered,3238,36.3,SGA
+KCH,Neonatal Death,Term-AGA,Included in analysis,50,36.42,SGA
+KCH,Neonatal Death,Term-SGA,Included in analysis,27,35.85,SGA
+KCH,Neonatal Death,Preterm-AGA,Included in analysis,382,35.59,SGA
+KCH,Neonatal Death,Preterm-SGA,Included in analysis,223,35.5,SGA
+KCH,Neonatal Death,Missing BW,Missing BW,4,35.23,SGA
+KCH,Neonatal Death,Missing GA,Missing GA,5,34.1,SGA
+KCH,Neonatal Death,Total,All admissions considered,691,35.62,SGA
+SMCH,Alive,Term-AGA,Included in analysis,8356,36.88,SGA
+SMCH,Alive,Term-SGA,Included in analysis,4385,36.83,SGA
+SMCH,Alive,Preterm-AGA,Included in analysis,3163,36.73,SGA
+SMCH,Alive,Preterm-SGA,Included in analysis,1364,36.67,SGA
+SMCH,Alive,Missing BW,Missing BW,75,36.84,SGA
+SMCH,Alive,Missing GA,Missing GA,230,36.79,SGA
+SMCH,Alive,Missing both BW and GA,Missing both BW and GA,2,37.05,SGA
+SMCH,Alive,Total,All admissions considered,17575,36.82,SGA
+SMCH,Neonatal Death,Term-AGA,Included in analysis,714,36.68,SGA
+SMCH,Neonatal Death,Term-SGA,Included in analysis,669,36.64,SGA
+SMCH,Neonatal Death,Preterm-AGA,Included in analysis,1274,36.47,SGA
+SMCH,Neonatal Death,Preterm-SGA,Included in analysis,749,36.49,SGA
+SMCH,Neonatal Death,Missing BW,Missing BW,13,36.09,SGA
+SMCH,Neonatal Death,Missing GA,Missing GA,145,36.04,SGA
+SMCH,Neonatal Death,Missing both BW and GA,Missing both BW and GA,1,37,SGA
+SMCH,Neonatal Death,Total,All admissions considered,3565,36.53,SGA

@@ -1,0 +1,30 @@
+facility,category,explanation,total_admissions,deaths,mortality_rate,classification
+KCH,ELBW,Included in analysis,489,293,59.9,Birthweight
+KCH,VLBW,Included in analysis,1965,600,30.5,Birthweight
+KCH,LBW,Included in analysis,3917,529,13.5,Birthweight
+KCH,NBW,Included in analysis,5096,542,10.6,Birthweight
+KCH,HBW,Included in analysis,204,11,5.4,Birthweight
+KCH,Discarded,Missing or invalid birth weight,126,29,23,Birthweight
+KCH,Total,All admissions considered,11797,2004,17,Birthweight
+SMCH,ELBW,Included in analysis,674,510,75.7,Birthweight
+SMCH,VLBW,Included in analysis,1650,836,50.7,Birthweight
+SMCH,LBW,Included in analysis,6268,1036,16.5,Birthweight
+SMCH,NBW,Included in analysis,13750,1145,8.3,Birthweight
+SMCH,HBW,Included in analysis,982,25,2.5,Birthweight
+SMCH,Discarded,Missing or invalid birth weight,99,14,14.1,Birthweight
+SMCH,Total,All admissions considered,23423,3566,15.2,Birthweight
+KCH,Term-AGA,Included in analysis,4106,422,10.3,SGA
+KCH,Term-SGA,Included in analysis,1540,223,14.5,SGA
+KCH,Preterm-AGA,Included in analysis,4116,805,19.6,SGA
+KCH,Preterm-SGA,Included in analysis,1859,507,27.3,SGA
+KCH,Missing BW,Missing BW,126,29,23,SGA
+KCH,Missing GA,Missing GA,50,18,36,SGA
+KCH,Total,All admissions considered,11797,2004,17,SGA
+SMCH,Term-AGA,Included in analysis,10000,714,7.1,SGA
+SMCH,Term-SGA,Included in analysis,5596,669,12,SGA
+SMCH,Preterm-AGA,Included in analysis,4943,1274,25.8,SGA
+SMCH,Preterm-SGA,Included in analysis,2368,750,31.7,SGA
+SMCH,Missing BW,Missing BW,94,13,13.8,SGA
+SMCH,Missing GA,Missing GA,417,145,34.8,SGA
+SMCH,Missing both BW and GA,Missing both BW and GA,5,1,20,SGA
+SMCH,Total,All admissions considered,23423,3566,15.2,SGA

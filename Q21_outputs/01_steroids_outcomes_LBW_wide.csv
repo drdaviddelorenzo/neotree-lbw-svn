@@ -1,0 +1,9 @@
+facility,steroids_group,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Steroids Used (Y),55,17,144,266,65,545,10,89,1,4,3,8,0,0,0,0,0,0,278,929,Birthweight
+KCH,Steroids Not Used (N),133,35,249,441,267,1345,370,2818,6,125,14,37,0,0,0,0,0,0,1039,4801,Birthweight
+KCH,Unsure (U),105,29,207,410,200,1091,160,1167,5,43,12,38,0,0,0,0,0,0,689,2778,Birthweight
+KCH,Missing,0,1,0,0,0,3,3,4,0,0,0,0,0,0,0,0,0,0,3,8,Birthweight
+SMCH,Steroids Used (Y),44,6,107,89,59,362,8,142,1,14,0,0,0,0,0,0,0,0,219,613,Birthweight
+SMCH,Steroids Not Used (N),304,30,446,323,652,2732,774,7837,14,628,9,47,0,0,0,0,0,0,2199,11597,Birthweight
+SMCH,Unsure (U),145,23,277,221,302,1390,344,2952,10,208,4,30,0,0,0,0,0,0,1082,4824,Birthweight
+SMCH,Missing,17,2,6,12,23,143,19,360,0,25,1,0,0,0,0,0,0,0,66,542,Birthweight
