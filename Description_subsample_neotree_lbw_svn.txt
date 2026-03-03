@@ -1,0 +1,124 @@
+SUBSAMPLE LOW BIRTH WEIGHT
+
+
+MALAWI
+
+Subsample NEWBORNS
+11,797 KCH records (2022-2025)
+529 columns of comprehensive newborn data
+Comparison with Maternal Dataset:
+
+Subsample MATERNAL
+Total output records: 9,696
+Input records: 13,303
+
+Date Ranges
+Earliest record: January 1, 2022 at 13:18:00
+Latest record: December 31, 2025 at 12:53:00
+Time span: Full 4 years (complete coverage)
+
+Output File
+Filename: SUBSAMPLE_20220101_to_20251231_MWI_COMBINED_MATERNITY_OUTCOMES_2026-02-06_cleaned.csv
+Size: 9,696 records × 70 columns
+
+
+ZIMBABWE
+
+Zimbabwe Newborn Data (SMCH Only) - Output Summary
+
+Input File: 
+ZIM_COMPLETE_ALL_RECORDS.csv
+Date Range: January 1, 2022 to December 31, 2025 (4 years)
+Facility Filter: SMCH only
+Output File: SUBSAMPLE_20220101_to_20251231_SMCH_ZIM_COMPLETE_ALL_RECORDS.csv
+
+Sample Characteristics
+Total Records: 23,423
+Columns: 666 (comprehensive Zimbabwe newborn/clinical data)
+Filter Efficiency: 60.61% of original dataset
+Data Quality: 37,792 out of 38,648 records (97.8%) had valid dates
+
+Date Range in Output
+Earliest: 2022-01-01 04:03:00
+Latest: 2025-12-31 23:37:00
+Coverage: Full 4 years with excellent coverage
+
+Facility
+SMCH only: 23,423 records (100%)
+Comparison: Zimbabwe SMCH vs Malawi KCH
+Metric	Zimbabwe SMCH	Malawi KCH	Comparison
+Records	23,423	11,797	SMCH has 2x more records
+Columns	666	529	SMCH has 137 more columns
+Original Dataset	38,648	21,868	ZIM dataset is larger
+Filter Efficiency	60.61%	53.95%	SMCH has better retention
+Date Quality	97.8% valid	95.3% valid	SMCH slightly better
+Date Coverage	Full 4 years	Full 4 years	Same period
+
+Key Findings
+1. SMCH is Nearly Double the Size
+SMCH has 23,423 records vs KCH's 11,797 records
+This represents 98.6% more data (essentially 2x larger)
+SMCH appears to be a higher-volume facility
+2. More Comprehensive Data Variables
+Zimbabwe dataset: 666 columns
+Malawi dataset: 529 columns
+Zimbabwe has 137 additional variables for analysis
+3. Excellent Date Coverage for Both
+Both datasets cover the full 2022-2025 period
+SMCH has slightly better data quality (97.8% vs 95.3% valid dates)
+Both start on Jan 1, 2022 and end on Dec 31, 2025
+
+
+
+Zimbabwe Maternal Data (SMCH) - Output Summary
+
+Input File: 
+ZIM_MATERNAL_OUTCOMES_2026-02-06_cleaned.csv
+Date Range: January 1, 2022 to December 31, 2025 (4 years)
+Facility Filter: SMCH only
+Output File: SUBSAMPLE_20220101_to_20251231_SMCH_ZIM_MATERNAL_OUTCOMES_2026-02-06_cleaned.csv
+
+Sample Characteristics
+Total Records: 67,970
+Columns: 35
+Filter Efficiency: 60.91% of original dataset
+Data Quality: 111,596 out of 111,596 records (100%) had valid dates
+
+Date Range
+Earliest: 2022-01-01 07:19:00
+Latest: 2025-12-31 22:00:00
+Coverage: Full 4 years
+Comparison: Zimbabwe SMCH vs Malawi KCH (Maternal Data)
+Metric	Zimbabwe SMCH	Malawi KCH	Difference
+Records	67,970	9,696	+58,274 (+601%) 
+Columns	35	70	-35 (fewer variables)
+Original Dataset	111,596	13,303	ZIM is 8.4x larger
+Filter Efficiency	60.91%	72.89%	Malawi better retention
+Date Quality	100% valid	99.98% valid	Both excellent
+Size Ratio	7:1	1	SMCH is 7x larger
+
+Key Findings
+1. SMCH is Dramatically Larger (7x)
+Zimbabwe SMCH has 67,970 maternal records compared to Malawi KCH's 9,696 records. This represents:
+7-fold difference in sample size
+601% more data in Zimbabwe
+Reflects SMCH being a much higher-volume tertiary hospital
+2. Column Differences
+Malawi (70 columns): More comprehensive maternal variables
+Zimbabwe (35 columns): More focused dataset with core maternal outcomes
+Zimbabwe dataset is leaner but has vastly more records
+3. Perfect Data Quality for Both
+Zimbabwe: 100% valid dates
+Malawi: 99.98% valid dates
+Both have excellent data quality
+4. Maternal vs Newborn Comparison
+
+Zimbabwe SMCH:
+Maternal: 67,970 records
+Newborn: 23,423 records
+Ratio: 2.9 mothers per newborn
+
+Malawi KCH:
+Maternal: 9,696 records
+Newborn: 11,797 records
+Ratio: 0.82 mothers per newborn
