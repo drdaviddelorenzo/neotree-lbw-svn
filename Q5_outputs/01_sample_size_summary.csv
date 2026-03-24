@@ -1,9 +1,0 @@
-description,n,percentage_of_total
-Total SMCH deliveries,67970,100
-Early neonatal deaths (ENND),370,0.5
-ENND with valid birthweight (LBW sample size),368,99.5
-Discarded for LBW (Missing/invalid birthweight),2,0.5
-ENND with valid SGA classification,357,96.5
-Discarded for SGA (Missing BW),1,0.3
-Discarded for SGA (Missing GA),11,3
-Discarded for SGA (Missing both BW and GA),1,0.3

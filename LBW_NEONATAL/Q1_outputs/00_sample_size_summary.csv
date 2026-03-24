@@ -1,0 +1,18 @@
+description,n,Filter_notes,percentage_of_total
+"Total NNU admissions (USS-confirmed, pre-filtered at file level)",30346,Input files pre-filtered to methodestgest == USS before this script,100
+Valid birthweight (LBW sample size),30346,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg,100
+Discarded for LBW (missing/invalid birthweight),0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg),0
+Valid SGA classification (SVN sample size),30346,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks AND !is.na(sga_category),100
+Discarded for SGA (missing/invalid GA or SGA could not be assigned),0,Valid BW but: NOT (!is.na(gestation) & gestation >= 24 wks) OR sga_category is NA,0
+,NA,NA,NA
+KCH - Total NNU admissions,10422,Input files pre-filtered to methodestgest == USS before this script,100
+KCH - LBW sample size,10422,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg,100
+KCH - Discarded for LBW,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg),0
+KCH - SGA sample size,10422,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks AND !is.na(sga_category),100
+KCH - Discarded for SGA,0,Valid BW but: NOT (!is.na(gestation) & gestation >= 24 wks) OR sga_category is NA,0
+,NA,NA,NA
+SMCH - Total NNU admissions,19924,Input files pre-filtered to methodestgest == USS before this script,100
+SMCH - LBW sample size,19924,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg,100
+SMCH - Discarded for LBW,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg),0
+SMCH - SGA sample size,19924,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks AND !is.na(sga_category),100
+SMCH - Discarded for SGA,0,Valid BW but: NOT (!is.na(gestation) & gestation >= 24 wks) OR sga_category is NA,0

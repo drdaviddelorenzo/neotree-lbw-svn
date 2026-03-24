@@ -1,0 +1,23 @@
+facility,classification,category,explanation,n_total_deaths,cause_1,n_1,pct_1,cause_2,n_2,pct_2,cause_3,n_3,pct_3,cause_4,n_4,pct_4,cause_5,n_5,pct_5
+KCH,Birthweight,ELBW,Included in analysis,283,Prematurity/RDS,216,76.3,RF,19,6.7,Birth Asphyxia/HIE,17,6,Neonatal Sepsis,9,3.2,Cause Not Specified,6,2.1
+KCH,Birthweight,VLBW,Included in analysis,603,Prematurity/RDS,377,62.5,Neonatal Sepsis,73,12.1,RF,42,7,Birth Asphyxia/HIE,30,5,Cause Not Specified,19,3.2
+KCH,Birthweight,LBW,Included in analysis,530,Prematurity/RDS,142,26.8,Neonatal Sepsis,116,21.9,Cause Not Specified,74,14,Birth Asphyxia/HIE,55,10.4,RF,31,5.8
+KCH,Birthweight,NBW,Included in analysis,537,Birth Asphyxia/HIE,171,31.8,Neonatal Sepsis,112,20.9,Cause Not Specified,60,11.2,Prematurity/RDS,32,6,RF,27,5
+KCH,Birthweight,HBW,Included in analysis,11,CHD,2,18.2,Cause Not Specified,2,18.2,Neonatal Sepsis,2,18.2,AS,1,9.1,MEN,1,9.1
+KCH,Birthweight,Total,All deaths considered,1964,Prematurity/RDS,768,39.1,Neonatal Sepsis,312,15.9,Birth Asphyxia/HIE,273,13.9,Cause Not Specified,161,8.2,RF,119,6.1
+SMCH,Birthweight,ELBW,Included in analysis,395,Prematurity/RDS,371,93.9,Birth Asphyxia/HIE,8,2,Neonatal Sepsis,5,1.3,Cause Not Specified,3,0.8,Gastroschisis,3,0.8
+SMCH,Birthweight,VLBW,Included in analysis,807,Prematurity/RDS,624,77.3,Neonatal Sepsis,42,5.2,Gastroschisis,32,4,Prem,29,3.6,Cause Not Specified,24,3
+SMCH,Birthweight,LBW,Included in analysis,998,Prematurity/RDS,375,37.6,Gastroschisis,283,28.4,Birth Asphyxia/HIE,89,8.9,Neonatal Sepsis,72,7.2,Cause Not Specified,63,6.3
+SMCH,Birthweight,NBW,Included in analysis,1082,Birth Asphyxia/HIE,564,52.1,Prematurity/RDS,158,14.6,Gastroschisis,109,10.1,Cause Not Specified,78,7.2,Neonatal Sepsis,60,5.5
+SMCH,Birthweight,HBW,Included in analysis,20,Birth Asphyxia/HIE,9,45,Prematurity/RDS,3,15,CHD,2,10,Cause Not Specified,2,10,Neonatal Sepsis,2,10
+SMCH,Birthweight,Total,All deaths considered,3302,Prematurity/RDS,1531,46.4,Birth Asphyxia/HIE,683,20.7,Gastroschisis,427,12.9,Neonatal Sepsis,181,5.5,Cause Not Specified,170,5.1
+KCH,SGA,Term-AGA,Included in analysis,415,Birth Asphyxia/HIE,137,33,Neonatal Sepsis,86,20.7,Cause Not Specified,43,10.4,Prematurity/RDS,22,5.3,RF,21,5.1
+KCH,SGA,Term-SGA,Included in analysis,228,Neonatal Sepsis,53,23.2,Cause Not Specified,37,16.2,Birth Asphyxia/HIE,36,15.8,Prematurity/RDS,22,9.6,RF,17,7.5
+KCH,SGA,Preterm-AGA,Included in analysis,809,Prematurity/RDS,404,49.9,Neonatal Sepsis,125,15.5,Birth Asphyxia/HIE,74,9.1,RF,55,6.8,Cause Not Specified,45,5.6
+KCH,SGA,Preterm-SGA,Included in analysis,512,Prematurity/RDS,320,62.5,Neonatal Sepsis,48,9.4,Cause Not Specified,36,7,Birth Asphyxia/HIE,26,5.1,RF,26,5.1
+KCH,SGA,Total,All deaths considered,1964,Prematurity/RDS,768,39.1,Neonatal Sepsis,312,15.9,Birth Asphyxia/HIE,273,13.9,Cause Not Specified,161,8.2,RF,119,6.1
+SMCH,SGA,Term-AGA,Included in analysis,689,Birth Asphyxia/HIE,396,57.5,Prematurity/RDS,100,14.5,Cause Not Specified,50,7.3,Gastroschisis,39,5.7,Neonatal Sepsis,35,5.1
+SMCH,SGA,Term-SGA,Included in analysis,636,Birth Asphyxia/HIE,210,33,Gastroschisis,159,25,Prematurity/RDS,108,17,Cause Not Specified,49,7.7,Congenital Anomaly,36,5.7
+SMCH,SGA,Preterm-AGA,Included in analysis,1249,Prematurity/RDS,826,66.1,Gastroschisis,144,11.5,Neonatal Sepsis,72,5.8,Birth Asphyxia/HIE,61,4.9,Cause Not Specified,49,3.9
+SMCH,SGA,Preterm-SGA,Included in analysis,728,Prematurity/RDS,497,68.3,Gastroschisis,85,11.7,Neonatal Sepsis,42,5.8,Prem,30,4.1,Cause Not Specified,22,3
+SMCH,SGA,Total,All deaths considered,3302,Prematurity/RDS,1531,46.4,Birth Asphyxia/HIE,683,20.7,Gastroschisis,427,12.9,Neonatal Sepsis,181,5.5,Cause Not Specified,170,5.1

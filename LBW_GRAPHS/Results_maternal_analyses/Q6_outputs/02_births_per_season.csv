@@ -1,0 +1,16 @@
+facility,season,n_total,n_valid_bw,n_valid_sga
+Global,Warm and wet,27845,27845,27845
+Global,Cool and wet,11508,11508,11508
+Global,Cool and dry,15106,15106,15106
+Global,Warm and dry,6576,6576,6576
+Global,Hot and dry,12800,12800,12800
+KCH,Warm and wet,2493,2493,2493
+KCH,Cool and wet,1107,1107,1107
+KCH,Cool and dry,1962,1962,1962
+KCH,Warm and dry,735,735,735
+KCH,Hot and dry,1002,1002,1002
+SMCH,Warm and wet,25352,25352,25352
+SMCH,Cool and wet,10401,10401,10401
+SMCH,Cool and dry,13144,13144,13144
+SMCH,Warm and dry,5841,5841,5841
+SMCH,Hot and dry,11798,11798,11798

@@ -1,0 +1,136 @@
+scope,classification,season,category,observed,expected,std_residual,direction
+Global,Birthweight,Warm and wet,ELBW,620,600.4,1.026,As expected
+Global,Birthweight,Cool and wet,ELBW,251,248.1,0.2,As expected
+Global,Birthweight,Cool and dry,ELBW,326,325.7,0.018,As expected
+Global,Birthweight,Warm and dry,ELBW,140,141.8,-0.159,As expected
+Global,Birthweight,Hot and dry,ELBW,255,276,-1.405,As expected
+Global,Birthweight,Warm and wet,VLBW,818,830.1,-0.538,As expected
+Global,Birthweight,Cool and wet,VLBW,331,343.1,-0.719,As expected
+Global,Birthweight,Cool and dry,VLBW,465,450.3,0.788,As expected
+Global,Birthweight,Warm and dry,VLBW,197,196,0.074,As expected
+Global,Birthweight,Hot and dry,VLBW,390,381.6,0.482,As expected
+Global,Birthweight,Warm and wet,LBW,4374,4217.4,3.317,More than expected
+Global,Birthweight,Cool and wet,LBW,1851,1743,3.057,More than expected
+Global,Birthweight,Cool and dry,LBW,2333,2287.9,1.147,As expected
+Global,Birthweight,Warm and dry,LBW,932,996,-2.306,Less than expected
+Global,Birthweight,Hot and dry,LBW,1693,1938.7,-6.662,Less than expected
+Global,Birthweight,Warm and wet,NBW,21557,21696.7,-2.558,Less than expected
+Global,Birthweight,Cool and wet,NBW,8899,8967,-1.663,As expected
+Global,Birthweight,Cool and dry,NBW,11703,11770.5,-1.486,As expected
+Global,Birthweight,Warm and dry,NBW,5153,5124,0.903,As expected
+Global,Birthweight,Hot and dry,NBW,10220,9973.7,5.772,More than expected
+Global,Birthweight,Warm and wet,HBW,476,500.4,-1.397,As expected
+Global,Birthweight,Cool and wet,HBW,176,206.8,-2.354,Less than expected
+Global,Birthweight,Cool and dry,HBW,279,271.5,0.516,As expected
+Global,Birthweight,Warm and dry,HBW,154,118.2,3.483,More than expected
+Global,Birthweight,Hot and dry,HBW,242,230,0.875,As expected
+Global,SGA,Warm and wet,Term-AGA,15157,15493.4,-5.142,Less than expected
+Global,SGA,Cool and wet,Term-AGA,6197,6403.2,-4.212,Less than expected
+Global,SGA,Cool and dry,Term-AGA,8462,8405.2,1.043,As expected
+Global,SGA,Warm and dry,Term-AGA,3806,3659,3.823,More than expected
+Global,SGA,Hot and dry,Term-AGA,7461,7122.1,6.631,More than expected
+Global,SGA,Warm and wet,Term-SGA,7086,6879.9,3.629,More than expected
+Global,SGA,Cool and wet,Term-SGA,3085,2843.4,5.684,More than expected
+Global,SGA,Cool and dry,Term-SGA,3564,3732.4,-3.561,Less than expected
+Global,SGA,Warm and dry,Term-SGA,1504,1624.8,-3.618,Less than expected
+Global,SGA,Hot and dry,Term-SGA,3004,3162.6,-3.575,Less than expected
+Global,SGA,Warm and wet,Preterm-AGA,4218,4158.9,1.258,As expected
+Global,SGA,Cool and wet,Preterm-AGA,1716,1718.8,-0.081,As expected
+Global,SGA,Cool and dry,Preterm-AGA,2350,2256.2,2.4,More than expected
+Global,SGA,Warm and dry,Preterm-AGA,983,982.2,0.029,As expected
+Global,SGA,Hot and dry,Preterm-AGA,1761,1911.8,-4.113,Less than expected
+Global,SGA,Warm and wet,Preterm-SGA,1384,1312.8,2.552,More than expected
+Global,SGA,Cool and wet,Preterm-SGA,510,542.6,-1.558,As expected
+Global,SGA,Cool and dry,Preterm-SGA,730,712.2,0.767,As expected
+Global,SGA,Warm and dry,Preterm-SGA,283,310,-1.648,As expected
+Global,SGA,Hot and dry,Preterm-SGA,574,603.5,-1.351,As expected
+KCH,Birthweight,Warm and wet,ELBW,67,66.6,0.061,As expected
+KCH,Birthweight,Cool and wet,ELBW,27,29.6,-0.521,As expected
+KCH,Birthweight,Cool and dry,ELBW,57,52.4,0.75,As expected
+KCH,Birthweight,Warm and dry,ELBW,20,19.6,0.088,As expected
+KCH,Birthweight,Hot and dry,ELBW,24,26.8,-0.584,As expected
+KCH,Birthweight,Warm and wet,VLBW,263,254.8,0.668,As expected
+KCH,Birthweight,Cool and wet,VLBW,108,113.1,-0.554,As expected
+KCH,Birthweight,Cool and dry,VLBW,175,200.5,-2.225,Less than expected
+KCH,Birthweight,Warm and dry,VLBW,81,75.1,0.755,As expected
+KCH,Birthweight,Hot and dry,VLBW,119,102.4,1.863,As expected
+KCH,Birthweight,Warm and wet,LBW,795,735.4,3.228,More than expected
+KCH,Birthweight,Cool and wet,LBW,300,326.5,-1.899,As expected
+KCH,Birthweight,Cool and dry,LBW,576,578.7,-0.158,As expected
+KCH,Birthweight,Warm and dry,LBW,200,216.8,-1.433,As expected
+KCH,Birthweight,Hot and dry,LBW,282,295.6,-1.011,As expected
+KCH,Birthweight,Warm and wet,NBW,1322,1385.3,-3.146,Less than expected
+KCH,Birthweight,Cool and wet,NBW,644,615.2,1.895,As expected
+KCH,Birthweight,Cool and dry,NBW,1116,1090.3,1.367,As expected
+KCH,Birthweight,Warm and dry,NBW,421,408.4,0.984,As expected
+KCH,Birthweight,Hot and dry,NBW,553,556.8,-0.26,As expected
+KCH,Birthweight,Warm and wet,HBW,46,50.9,-0.854,As expected
+KCH,Birthweight,Cool and wet,HBW,28,22.6,1.247,As expected
+KCH,Birthweight,Cool and dry,HBW,38,40.1,-0.383,As expected
+KCH,Birthweight,Warm and dry,HBW,13,15,-0.551,As expected
+KCH,Birthweight,Hot and dry,HBW,24,20.5,0.853,As expected
+KCH,SGA,Warm and wet,Term-AGA,942,1036.6,-4.738,Less than expected
+KCH,SGA,Cool and wet,Term-AGA,484,460.3,1.569,As expected
+KCH,SGA,Cool and dry,Term-AGA,858,815.8,2.26,More than expected
+KCH,SGA,Warm and dry,Term-AGA,321,305.6,1.214,As expected
+KCH,SGA,Hot and dry,Term-AGA,430,416.6,0.922,As expected
+KCH,SGA,Warm and wet,Term-SGA,316,305.7,0.776,As expected
+KCH,SGA,Cool and wet,Term-SGA,149,135.7,1.319,As expected
+KCH,SGA,Cool and dry,Term-SGA,232,240.6,-0.691,As expected
+KCH,SGA,Warm and dry,Term-SGA,93,90.1,0.341,As expected
+KCH,SGA,Hot and dry,Term-SGA,105,122.9,-1.852,As expected
+KCH,SGA,Warm and wet,Preterm-AGA,1000,945.8,2.759,More than expected
+KCH,SGA,Cool and wet,Preterm-AGA,402,420,-1.208,As expected
+KCH,SGA,Cool and dry,Preterm-AGA,716,744.3,-1.541,As expected
+KCH,SGA,Warm and dry,Preterm-AGA,270,278.8,-0.708,As expected
+KCH,SGA,Hot and dry,Preterm-AGA,381,380.1,0.061,As expected
+KCH,SGA,Warm and wet,Preterm-SGA,235,204.9,2.702,More than expected
+KCH,SGA,Cool and wet,Preterm-SGA,72,91,-2.257,Less than expected
+KCH,SGA,Cool and dry,Preterm-SGA,156,161.3,-0.508,As expected
+KCH,SGA,Warm and dry,Preterm-SGA,51,60.4,-1.334,As expected
+KCH,SGA,Hot and dry,Preterm-SGA,86,82.4,0.45,As expected
+SMCH,Birthweight,Warm and wet,ELBW,553,532.3,1.153,As expected
+SMCH,Birthweight,Cool and wet,ELBW,224,218.4,0.418,As expected
+SMCH,Birthweight,Cool and dry,ELBW,269,276,-0.474,As expected
+SMCH,Birthweight,Warm and dry,ELBW,120,122.6,-0.252,As expected
+SMCH,Birthweight,Hot and dry,ELBW,231,247.7,-1.183,As expected
+SMCH,Birthweight,Warm and wet,VLBW,555,554.4,0.033,As expected
+SMCH,Birthweight,Cool and wet,VLBW,223,227.4,-0.325,As expected
+SMCH,Birthweight,Cool and dry,VLBW,290,287.4,0.171,As expected
+SMCH,Birthweight,Warm and dry,VLBW,116,127.7,-1.099,As expected
+SMCH,Birthweight,Hot and dry,VLBW,271,258,0.902,As expected
+SMCH,Birthweight,Warm and wet,LBW,3579,3440.7,3.224,More than expected
+SMCH,Birthweight,Cool and wet,LBW,1551,1411.6,4.346,More than expected
+SMCH,Birthweight,Cool and dry,LBW,1757,1783.9,-0.763,As expected
+SMCH,Birthweight,Warm and dry,LBW,732,792.7,-2.429,Less than expected
+SMCH,Birthweight,Hot and dry,LBW,1411,1601.2,-5.636,Less than expected
+SMCH,Birthweight,Warm and wet,NBW,20235,20375.8,-2.83,Less than expected
+SMCH,Birthweight,Cool and wet,NBW,8255,8359.4,-2.807,Less than expected
+SMCH,Birthweight,Cool and dry,NBW,10587,10564,0.563,As expected
+SMCH,Birthweight,Warm and dry,NBW,4732,4694.5,1.293,As expected
+SMCH,Birthweight,Hot and dry,NBW,9667,9482.2,4.722,More than expected
+SMCH,Birthweight,Warm and wet,HBW,430,448.8,-1.141,As expected
+SMCH,Birthweight,Cool and wet,HBW,148,184.1,-2.926,Less than expected
+SMCH,Birthweight,Cool and dry,HBW,241,232.7,0.612,As expected
+SMCH,Birthweight,Warm and dry,HBW,141,103.4,3.905,More than expected
+SMCH,Birthweight,Hot and dry,HBW,218,208.9,0.702,As expected
+SMCH,SGA,Warm and wet,Term-AGA,14215,14497.3,-4.555,Less than expected
+SMCH,SGA,Cool and wet,Term-AGA,5713,5947.7,-5.064,Less than expected
+SMCH,SGA,Cool and dry,Term-AGA,7604,7516.3,1.726,As expected
+SMCH,SGA,Warm and dry,Term-AGA,3485,3340.1,4.011,More than expected
+SMCH,SGA,Hot and dry,Term-AGA,7031,6746.6,5.834,More than expected
+SMCH,SGA,Warm and wet,Term-SGA,6770,6610.1,2.908,More than expected
+SMCH,SGA,Cool and wet,Term-SGA,2936,2711.9,5.45,More than expected
+SMCH,SGA,Cool and dry,Term-SGA,3332,3427,-2.108,Less than expected
+SMCH,SGA,Warm and dry,Term-SGA,1411,1522.9,-3.493,Less than expected
+SMCH,SGA,Hot and dry,Term-SGA,2899,3076.1,-4.095,Less than expected
+SMCH,SGA,Warm and wet,Preterm-AGA,3218,3146.9,1.721,As expected
+SMCH,SGA,Cool and wet,Preterm-AGA,1314,1291.1,0.743,As expected
+SMCH,SGA,Cool and dry,Preterm-AGA,1634,1631.5,0.073,As expected
+SMCH,SGA,Warm and dry,Preterm-AGA,713,725,-0.5,As expected
+SMCH,SGA,Hot and dry,Preterm-AGA,1380,1464.5,-2.6,Less than expected
+SMCH,SGA,Warm and wet,Preterm-SGA,1149,1097.7,2.011,More than expected
+SMCH,SGA,Cool and wet,Preterm-SGA,438,450.4,-0.648,As expected
+SMCH,SGA,Cool and dry,Preterm-SGA,574,569.1,0.233,As expected
+SMCH,SGA,Warm and dry,Preterm-SGA,232,252.9,-1.408,As expected
+SMCH,SGA,Hot and dry,Preterm-SGA,488,510.9,-1.14,As expected

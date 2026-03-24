@@ -1,0 +1,28 @@
+outcome,category,n,percentage,classification
+Alive,ELBW,149,0.5940988835725678,Birthweight
+Alive,VLBW,1759,7.013556618819777,Birthweight
+Alive,LBW,7472,29.792663476874004,Birthweight
+Alive,NBW,14744,58.78787878787879,Birthweight
+Alive,HBW,956,3.811802232854864,Birthweight
+Neonatal Death (in-facility),ELBW,677,12.895238095238096,Birthweight
+Neonatal Death (in-facility),VLBW,1409,26.83809523809524,Birthweight
+Neonatal Death (in-facility),LBW,1522,28.990476190476187,Birthweight
+Neonatal Death (in-facility),NBW,1612,30.704761904761906,Birthweight
+Neonatal Death (in-facility),HBW,30,0.5714285714285714,Birthweight
+Neonatal Death (pre-facility),ELBW,1,6.25,Birthweight
+Neonatal Death (pre-facility),VLBW,1,6.25,Birthweight
+Neonatal Death (pre-facility),LBW,6,37.5,Birthweight
+Neonatal Death (pre-facility),NBW,7,43.75,Birthweight
+Neonatal Death (pre-facility),HBW,1,6.25,Birthweight
+Alive,Term-AGA,11358,45.28708133971292,SGA
+Alive,Term-SGA,5349,21.327751196172247,SGA
+Alive,Preterm-AGA,5927,23.63237639553429,SGA
+Alive,Preterm-SGA,2446,9.752791068580542,SGA
+Neonatal Death (in-facility),Term-AGA,1098,20.914285714285715,SGA
+Neonatal Death (in-facility),Term-SGA,860,16.380952380952383,SGA
+Neonatal Death (in-facility),Preterm-AGA,2055,39.14285714285714,SGA
+Neonatal Death (in-facility),Preterm-SGA,1237,23.561904761904763,SGA
+Neonatal Death (pre-facility),Term-AGA,6,37.5,SGA
+Neonatal Death (pre-facility),Term-SGA,4,25,SGA
+Neonatal Death (pre-facility),Preterm-AGA,3,18.75,SGA
+Neonatal Death (pre-facility),Preterm-SGA,3,18.75,SGA

@@ -1,0 +1,14 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Analysis population (valid outcome),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"")"
+Excluded: missing/invalid outcome,0,0,"NOT (normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death""))"
+Analysis population — Steroids Used (Y),2017,6.6,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND toupper(trimws(ansteroids)) == ""Y"""
+Analysis population — Steroids Not Used (N),19167,63.2,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND toupper(trimws(ansteroids)) == ""N"""
+Analysis population — Unsure (U),9140,30.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND toupper(trimws(ansteroids)) == ""U"""
+Analysis population — Missing steroids record,22,0.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND ansteroids is NA/blank/unrecognised — retained as ""Missing"" in tables"
+Analysis population with valid birthweight (LBW sample),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg"
+Discarded for LBW (missing/invalid birthweight),0,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)"
+Analysis population with valid SGA classification,30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

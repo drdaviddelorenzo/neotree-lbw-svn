@@ -1,0 +1,9 @@
+description,n,pct_of_valid_maternal_age,Filter_notes
+Total live births,69505,631.6,"neotreeoutcome == ""LB"""
+Live births with valid maternal age,11004,100,!is.na(matage) & matage >= 10 & matage <= 55
+Records with valid age AND birthweight (LBW sample),11004,100,matage valid AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+Discarded for LBW (Missing/invalid birthweight),0,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+Records with valid SGA classification,11004,100,BW valid AND !is.na(gestation) & gestation >= 22 wks & gestation <= 42 wks
+Discarded for SGA (Missing BW),0,0,Birth weight invalid / missing
+Discarded for SGA (Missing GA),0,0,Gestational age invalid / missing
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid / missing

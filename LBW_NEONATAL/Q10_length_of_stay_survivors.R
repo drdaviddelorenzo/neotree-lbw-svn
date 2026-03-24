@@ -1,0 +1,446 @@
+# Q10_length_of_stay_survivors.R
+# Analysis of Length of Stay (LOS) for Survivors by LBW and SGA Categories
+#
+# This script analyzes Length of Stay (lengthofstay) for babies who SURVIVED to discharge:
+# 1. Filters for "Alive" outcomes (excludes NND, Stillbirth, Died)
+# 2. Distribution of LOS by birthweight categories (LBW)
+# 3. Distribution of LOS by SGA categories (SVN)
+# 4. Stratification by facility (KCH, SMCH)
+# 5. Reports number of outliers excluded (> 90 days)
+#
+# Data sources:
+# - KCH Malawi newborn admissions
+# - SMCH Zimbabwe newborn admissions
+
+suppressPackageStartupMessages({
+    library(dplyr)
+    library(readr)
+    library(tidyr)
+    library(lubridate)
+})
+
+# ===== CONFIGURATION =====
+# Input files
+kch_file <- "LBW_KCH_NNU.csv"
+smch_file <- "LBW_SMCH_NNU.csv"
+
+# Output directory
+output_dir <- "Q10_outputs"
+if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
+
+# ---------------------------------------------------------------------------
+# SHARED VALIDITY THRESHOLDS
+# Must match the thresholds used in analysis_df below.
+# ---------------------------------------------------------------------------
+BW_MIN_KG <- 0.3 # minimum plausible birth weight (kg) — 300 g
+BW_MAX_KG <- 7.0 # maximum plausible birth weight (kg) — 7000 g
+GA_MIN <- 24 # minimum gestational age for SGA classification (weeks)
+GA_MAX <- 42 # maximum gestational age (weeks)
+
+# Outlier filtering for Length of Stay (days)
+MAX_LOS_DAYS <- 180 # Filter out stays longer than 180 days
+
+# ===== INTERGROWTH-21st 10TH PERCENTILE REFERENCE =====
+# UNISEX / SEX-POOLED (14 to 42 weeks)
+PCT10_UNISEX <- c(
+    "14" = 76, "15" = 98, "16" = 125, "17" = 158, "18" = 198, "19" = 244, "20" = 298, "21" = 359, "22" = 429, "23" = 508,
+    "24" = 560, "25" = 640, "26" = 740, "27" = 840, "28" = 940, "29" = 1060, "30" = 1190, "31" = 1340, "32" = 1500,
+    "33" = 1580, "34" = 1780, "35" = 2000, "36" = 2220, "37" = 2440, "38" = 2650, "39" = 2850, "40" = 3010, "41" = 3150, "42" = 3260
+)
+
+# BOYS (14 to 42 weeks)
+PCT10_BOYS <- c(
+    "14" = 76, "15" = 98, "16" = 125, "17" = 158, "18" = 198, "19" = 244, "20" = 298, "21" = 359, "22" = 429, "23" = 508,
+    "24" = 580, "25" = 660, "26" = 760, "27" = 870, "28" = 980, "29" = 1110, "30" = 1250, "31" = 1410, "32" = 1580,
+    "33" = 1600, "34" = 1810, "35" = 2030, "36" = 2250, "37" = 2480, "38" = 2700, "39" = 2900, "40" = 3070, "41" = 3210, "42" = 3320
+)
+
+# GIRLS (14 to 42 weeks)
+PCT10_GIRLS <- c(
+    "14" = 76, "15" = 98, "16" = 125, "17" = 158, "18" = 198, "19" = 244, "20" = 298, "21" = 359, "22" = 429, "23" = 508,
+    "24" = 540, "25" = 620, "26" = 720, "27" = 810, "28" = 910, "29" = 1030, "30" = 1150, "31" = 1300, "32" = 1460,
+    "33" = 1540, "34" = 1750, "35" = 1960, "36" = 2180, "37" = 2400, "38" = 2610, "39" = 2800, "40" = 2960, "41" = 3090, "42" = 3190
+)
+
+# ===== HELPER FUNCTIONS =====
+
+# Convert birthweight to kg
+to_kg <- function(x) {
+    x_num <- suppressWarnings(as.numeric(x))
+    pos <- x_num[is.finite(x_num) & x_num > 0]
+    if (length(pos) > 0) {
+        med <- median(pos, na.rm = TRUE)
+        if (is.finite(med) && med > 20 && med <= 7000) {
+            return(x_num / 1000) # grams -> kg
+        }
+    }
+    x_num
+}
+
+# Get birthweight from available columns
+get_bw_column <- function(df) {
+    result <- rep(NA_character_, nrow(df))
+    if ("birthweight" %in% names(df)) {
+        result <- ifelse(is.na(result) & !is.na(df$birthweight), df$birthweight, result)
+    }
+    result
+}
+
+# Get 10th percentile birthweight for gestational age
+get_10th_percentile_bw <- function(gestation_weeks, gender_val = NA_character_) {
+    if (is.na(gestation_weeks)) {
+        return(NA_real_)
+    }
+
+    ga <- round(gestation_weeks)
+    ga_char <- as.character(ga)
+
+    if (ga < 14 || ga > 42) {
+        return(NA_real_)
+    }
+
+    gender_clean <- toupper(trimws(gender_val))
+
+    if (!is.na(gender_clean) && gender_clean %in% c("M", "MALE", "BOY")) {
+        percentile_g <- PCT10_BOYS[ga_char]
+    } else if (!is.na(gender_clean) && gender_clean %in% c("F", "FEMALE", "GIRL")) {
+        percentile_g <- PCT10_GIRLS[ga_char]
+    } else {
+        percentile_g <- PCT10_UNISEX[ga_char]
+    }
+
+    if (is.na(percentile_g)) {
+        return(NA_real_)
+    } else {
+        return(as.numeric(percentile_g) / 1000)
+    }
+}
+
+# Classify SGA
+classify_sga <- function(bw_kg, gestation_weeks, gender_val = NA_character_) {
+    percentile_10 <- mapply(get_10th_percentile_bw, gestation_weeks, gender_val, USE.NAMES = FALSE)
+    ifelse(is.na(bw_kg) | is.na(percentile_10), NA_character_,
+        ifelse(bw_kg < percentile_10, "SGA", "AGA")
+    )
+}
+
+# Create SGA categories
+sga_category_from_gestational_age <- function(sga_status, gestation_weeks) {
+    dplyr::case_when(
+        is.na(sga_status) | is.na(gestation_weeks) ~ NA_character_,
+        gestation_weeks >= 37 & sga_status == "SGA" ~ "Term-SGA",
+        gestation_weeks >= 37 & sga_status == "AGA" ~ "Term-AGA",
+        gestation_weeks < 37 & sga_status == "SGA" ~ "Preterm-SGA",
+        gestation_weeks < 37 & sga_status == "AGA" ~ "Preterm-AGA",
+        TRUE ~ NA_character_
+    )
+}
+
+# Birthweight categories
+bw_category_from_kg <- function(bw_kg) {
+    dplyr::case_when(
+        is.na(bw_kg) ~ NA_character_,
+        bw_kg < 1.000 ~ "ELBW",
+        bw_kg >= 1.000 & bw_kg < 1.500 ~ "VLBW",
+        bw_kg >= 1.500 & bw_kg < 2.500 ~ "LBW",
+        bw_kg >= 2.500 & bw_kg <= 4.000 ~ "NBW",
+        bw_kg > 4.000 ~ "HBW",
+        TRUE ~ NA_character_
+    )
+}
+
+# Add matching Total row
+add_totals <- function(summary_df, raw_df, classification_name, by_facility = FALSE) {
+    if (by_facility) {
+        totals <- raw_df %>%
+            group_by(facility) %>%
+            summarise(
+                n_total = n(),
+                n_excluded = sum(los_days > MAX_LOS_DAYS, na.rm = TRUE),
+                n_analyzed = sum(los_days <= MAX_LOS_DAYS, na.rm = TRUE),
+                mean_los = mean(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                median_los = median(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                min_los = min(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                max_los = max(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                sd_los = sd(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                q1_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.25, na.rm = TRUE),
+                q3_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.75, na.rm = TRUE),
+                .groups = "drop"
+            ) %>%
+            mutate(
+                category = "Total",
+                explanation = "All survivors considered",
+                classification = classification_name
+            )
+        group_cols <- "facility"
+    } else {
+        totals <- raw_df %>%
+            summarise(
+                n_total = n(),
+                n_excluded = sum(los_days > MAX_LOS_DAYS, na.rm = TRUE),
+                n_analyzed = sum(los_days <= MAX_LOS_DAYS, na.rm = TRUE),
+                mean_los = mean(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                median_los = median(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                min_los = min(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                max_los = max(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                sd_los = sd(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+                q1_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.25, na.rm = TRUE),
+                q3_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.75, na.rm = TRUE),
+                .groups = "drop"
+            ) %>%
+            mutate(
+                category = "Total",
+                explanation = "All survivors considered",
+                classification = classification_name,
+                facility = "Overall"
+            )
+        group_cols <- character(0)
+    }
+
+    bind_rows(summary_df, totals) %>%
+        arrange(
+            if (by_facility) facility else NULL,
+            match(category, c(
+                "ELBW", "VLBW", "LBW", "NBW", "HBW",
+                "Term-AGA", "Term-SGA", "Preterm-AGA", "Preterm-SGA",
+                "Discarded", "Missing BW", "Missing GA", "Missing both BW and GA", "Total"
+            ))
+        )
+}
+
+# Normalize outcomes
+normalise_outcome <- function(x) {
+    y <- tolower(trimws(as.character(x)))
+    y <- gsub("[^a-z0-9]+", " ", y)
+    y <- gsub("\\s+", " ", y)
+
+    dplyr::case_when(
+        grepl("\\bdc\\b|discharged|\\bdcr\\b|\\bdpc\\b|\\bdckmc\\b|kangaroo mother care", y) ~ "Alive",
+        grepl("\\babs\\b|abscond|\\bdama\\b|against medical advice", y) ~ "Alive",
+        grepl("\\btrh\\b|\\btro\\b|transfer", y) ~ "Alive",
+        grepl("\\bnnd\\b|neonatal death|\\bdda\\b|died during admission", y) ~ "Neonatal Death",
+        grepl("\\bbid\\b|brought in dead", y) ~ "Neonatal Death",
+        grepl("\\bstb\\b|stillbirth|still born", y) ~ "Stillbirth",
+        y == "" ~ NA_character_,
+        TRUE ~ "Unknown/Other"
+    )
+}
+
+# ===== LOAD AND PROCESS DATA =====
+
+cat("\n=== Loading Newborn Admission Data ===\n")
+cat("Reading KCH newborn data...\n")
+kch_raw <- suppressMessages(read_csv(kch_file, guess_max = 50000, col_types = cols(.default = "c")))
+cat("Reading SMCH newborn data...\n")
+smch_raw <- suppressMessages(read_csv(smch_file, guess_max = 50000, col_types = cols(.default = "c")))
+
+# Add Facility identifiers
+kch_proc <- kch_raw %>% mutate(facility = "KCH")
+smch_proc <- smch_raw %>% mutate(facility = "SMCH")
+
+# Combine datasets
+cat("Combining datasets...\n")
+all_admissions <- bind_rows(kch_proc, smch_proc)
+cat("Total records loaded:", nrow(all_admissions), "\n")
+
+# Process key variables
+cat("Processing variables (Birthweight, Gestation, Outcome, LOS)...\n")
+analysis_df <- all_admissions %>%
+    mutate(
+        # Birthweight processing
+        bw_raw = get_bw_column(.),
+        bw_kg = to_kg(bw_raw),
+
+        # Gestation processing
+        gestation_weeks = suppressWarnings(as.numeric(gestation)),
+
+        # Outcome processing
+        outcome_norm = normalise_outcome(neotreeoutcome),
+
+        # Length of Stay (lengthofstay) NOT timespent
+        # Calculated from datetimedischarge - datetimeadmission
+        adm_ts = suppressWarnings(lubridate::parse_date_time(datetimeadmission, orders = c("Ymd HMS", "Ymd HM", "Ymd"))),
+        dis_ts = suppressWarnings(lubridate::parse_date_time(datetimedischarge, orders = c("Ymd HMS", "Ymd HM", "Ymd"))),
+        los_days = as.numeric(difftime(dis_ts, adm_ts, units = "days")),
+
+        # Validations
+        is_valid_bw = is.finite(bw_kg) & bw_kg >= BW_MIN_KG & bw_kg <= BW_MAX_KG,
+        is_invalid_ga = is.na(gestation_weeks) | gestation_weeks < GA_MIN | gestation_weeks > GA_MAX,
+        sga_status = dplyr::if_else(gestation_weeks >= GA_MIN & !is.na(gestation_weeks), classify_sga(bw_kg, gestation_weeks, if ("gender" %in% names(.)) gender else NA_character_), NA_character_),
+        sga_cat_temp = sga_category_from_gestational_age(sga_status, gestation_weeks),
+        is_valid_sga = is_valid_bw & !is.na(sga_cat_temp),
+
+        # Categorizations including "Discarded"
+        bw_category = if_else(is_valid_bw, bw_category_from_kg(bw_kg), "Discarded"),
+        lbw_explanation = if_else(is_valid_bw, "Included in analysis", "Missing or invalid birth weight"),
+        sga_explanation = case_when(
+            is_valid_sga ~ "Included in analysis",
+            !is_valid_bw & is_invalid_ga ~ "Missing both BW and GA",
+            !is_valid_bw ~ "Missing BW",
+            is_invalid_ga ~ "Missing GA",
+            TRUE ~ "Missing GA"
+        ),
+        sga_category = if_else(is_valid_sga, sga_cat_temp, sga_explanation)
+    )
+
+# ===== FILTERING =====
+
+# 1. Survivors Only (Outcome == Alive)
+survivors_df <- analysis_df %>%
+    filter(outcome_norm == "Alive")
+
+# 2. Valid LOS (Numeric and non-negative)
+# Note: We do NOT filter outlier > MAX_LOS_DAYS here yet,
+# because we want to count them in the summary tables.
+survivors_with_los <- survivors_df %>%
+    filter(is.finite(los_days) & los_days >= 0)
+
+cat("\n=== Filtering Summary ===\n")
+cat("Total Records:", nrow(all_admissions), "\n")
+cat("Survivors (Alive):", nrow(survivors_df), "\n")
+cat("Survivors with valid numeric LOS:", nrow(survivors_with_los), "\n")
+
+
+# ===== ANALYSIS: LOS BY CATEGORY =====
+
+# Function to calculate summary stats INCLUDING outlier counts
+calc_los_stats <- function(data, group_var) {
+    data %>%
+        group_by(across(all_of(group_var))) %>%
+        summarise(
+            n_total = n(),
+            n_excluded = sum(los_days > MAX_LOS_DAYS, na.rm = TRUE),
+            n_analyzed = sum(los_days <= MAX_LOS_DAYS, na.rm = TRUE),
+
+            # Statistics on INCLUDED data only
+            mean_los = mean(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+            median_los = median(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+            min_los = min(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+            max_los = max(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+            sd_los = sd(los_days[los_days <= MAX_LOS_DAYS], na.rm = TRUE),
+            q1_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.25, na.rm = TRUE),
+            q3_los = quantile(los_days[los_days <= MAX_LOS_DAYS], 0.75, na.rm = TRUE),
+            .groups = "drop"
+        )
+}
+
+cat("\n=== Calculating Statistics ===\n")
+
+# LBW Categories
+# ----------------
+cat("Processing LBW categories...\n")
+
+# Overall
+lbw_overall <- survivors_with_los %>%
+    rename(category = bw_category, explanation = lbw_explanation) %>%
+    calc_los_stats(c("category", "explanation")) %>%
+    mutate(facility = "Overall", classification = "Birthweight") %>%
+    add_totals(survivors_with_los, "Birthweight", by_facility = FALSE)
+
+# By Facility
+lbw_facility <- survivors_with_los %>%
+    rename(category = bw_category, explanation = lbw_explanation) %>%
+    calc_los_stats(c("facility", "category", "explanation")) %>%
+    mutate(classification = "Birthweight") %>%
+    add_totals(survivors_with_los, "Birthweight", by_facility = TRUE)
+
+# SGA Categories
+# ----------------
+cat("Processing SGA categories...\n")
+
+# Overall
+sga_overall <- survivors_with_los %>%
+    rename(category = sga_category, explanation = sga_explanation) %>%
+    calc_los_stats(c("category", "explanation")) %>%
+    mutate(facility = "Overall", classification = "SGA") %>%
+    add_totals(survivors_with_los, "SGA", by_facility = FALSE) %>%
+    arrange(
+        match(category, c("Term-AGA", "Term-SGA", "Preterm-AGA", "Preterm-SGA", "Missing BW", "Missing GA", "Missing both BW and GA", "Discarded", "Total")),
+        match(explanation, c("Included in analysis", "Missing BW", "Missing GA", "Missing both BW and GA"))
+    )
+
+# By Facility
+sga_facility <- survivors_with_los %>%
+    rename(category = sga_category, explanation = sga_explanation) %>%
+    calc_los_stats(c("facility", "category", "explanation")) %>%
+    mutate(classification = "SGA") %>%
+    add_totals(survivors_with_los, "SGA", by_facility = TRUE) %>%
+    arrange(
+        facility,
+        match(category, c("Term-AGA", "Term-SGA", "Preterm-AGA", "Preterm-SGA", "Missing BW", "Missing GA", "Missing both BW and GA", "Discarded", "Total")),
+        match(explanation, c("Included in analysis", "Missing BW", "Missing GA", "Missing both BW and GA"))
+    )
+
+
+# ===== COMBINE AND SAVE =====
+
+cat("\n=== Saving Results ===\n")
+
+# Combine results
+all_overall <- bind_rows(lbw_overall, sga_overall)
+all_facility <- bind_rows(lbw_facility, sga_facility)
+
+# Save
+write_csv(all_overall, file.path(output_dir, "01_los_stats_overall.csv"))
+cat("Saved: 01_los_stats_overall.csv\n")
+
+write_csv(all_facility, file.path(output_dir, "02_los_stats_by_facility.csv"))
+cat("Saved: 02_los_stats_by_facility.csv\n")
+
+# Also save a sample size summary
+bw_note <- sprintf(
+    "is.finite(bw_kg) & bw_kg >= %.1f kg & bw_kg <= %.1f kg",
+    BW_MIN_KG, BW_MAX_KG
+)
+ga_note <- sprintf(
+    "!is.na(gestation) & gestation >= %d wks & gestation <= %d wks",
+    GA_MIN, GA_MAX
+)
+sga_note <- paste0(bw_note, " AND ", ga_note, " AND !is.na(sga_category)")
+alive_note <- "normalise_outcome(neotreeoutcome) == \"Alive\""
+los_note <- "is.finite(los_days) & los_days >= 0"
+outlier_note <- sprintf("los_days > %d days", MAX_LOS_DAYS)
+analyzed_note <- sprintf("is.finite(los_days) & los_days >= 0 & los_days <= %d days", MAX_LOS_DAYS)
+
+n_total <- nrow(all_admissions)
+
+sample_size_summary <- tibble(
+    description = c(
+        "Total admissions",
+        "Survivors (Alive)",
+        "Survivors with valid LOS",
+        sprintf("Excluded LOS outliers (> %d days)", MAX_LOS_DAYS),
+        "Final sample analyzed",
+        "Discarded for LBW (missing/invalid birthweight) — survivors",
+        "Discarded for SGA (Missing BW) — survivors",
+        "Discarded for SGA (Missing GA) — survivors",
+        "Discarded for SGA (Missing both BW and GA) — survivors"
+    ),
+    n = c(
+        n_total,
+        nrow(survivors_df),
+        nrow(survivors_with_los),
+        sum(survivors_with_los$los_days > MAX_LOS_DAYS, na.rm = TRUE),
+        sum(survivors_with_los$los_days <= MAX_LOS_DAYS, na.rm = TRUE),
+        sum(!survivors_with_los$is_valid_bw, na.rm = TRUE),
+        sum(survivors_with_los$sga_explanation == "Missing BW", na.rm = TRUE),
+        sum(survivors_with_los$sga_explanation == "Missing GA", na.rm = TRUE),
+        sum(survivors_with_los$sga_explanation == "Missing both BW and GA", na.rm = TRUE)
+    ),
+    pct_of_total = round(100 * n / n_total, 1),
+    Filter_notes = c(
+        NA_character_,
+        alive_note,
+        paste0(alive_note, " AND ", los_note),
+        paste0(alive_note, " AND ", los_note, " AND ", outlier_note),
+        paste0(alive_note, " AND ", analyzed_note),
+        paste0("Survivor with valid LOS but: NOT (", bw_note, ")"),
+        "Invalid/missing birth weight",
+        "Invalid/missing gestational age",
+        "Both BW and GA invalid/missing"
+    )
+)
+write_csv(sample_size_summary, file.path(output_dir, "00_sample_size_summary.csv"))
+cat("Saved: 00_sample_size_summary.csv\n")
+
+cat("\nAnalysis complete!\n")

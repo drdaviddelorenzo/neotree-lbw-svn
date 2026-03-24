@@ -1,0 +1,23 @@
+facility,category,explanation,total_admissions,deaths,mortality_rate,classification
+KCH,ELBW,Included in analysis,371,282,76,Birthweight
+KCH,VLBW,Included in analysis,1730,602,34.8,Birthweight
+KCH,LBW,Included in analysis,3522,524,14.9,Birthweight
+KCH,NBW,Included in analysis,4618,530,11.5,Birthweight
+KCH,HBW,Included in analysis,181,10,5.5,Birthweight
+KCH,Total,All admissions considered,10422,1948,18.7,Birthweight
+SMCH,ELBW,Included in analysis,456,395,86.6,Birthweight
+SMCH,VLBW,Included in analysis,1439,807,56.1,Birthweight
+SMCH,LBW,Included in analysis,5478,998,18.2,Birthweight
+SMCH,NBW,Included in analysis,11745,1082,9.2,Birthweight
+SMCH,HBW,Included in analysis,806,20,2.5,Birthweight
+SMCH,Total,All admissions considered,19924,3302,16.6,Birthweight
+KCH,Term-AGA,Included in analysis,3746,409,10.9,SGA
+KCH,Term-SGA,Included in analysis,1387,224,16.1,SGA
+KCH,Preterm-AGA,Included in analysis,3662,806,22,SGA
+KCH,Preterm-SGA,Included in analysis,1627,509,31.3,SGA
+KCH,Total,All admissions considered,10422,1948,18.7,SGA
+SMCH,Term-AGA,Included in analysis,8716,689,7.9,SGA
+SMCH,Term-SGA,Included in analysis,4826,636,13.2,SGA
+SMCH,Preterm-AGA,Included in analysis,4323,1249,28.9,SGA
+SMCH,Preterm-SGA,Included in analysis,2059,728,35.4,SGA
+SMCH,Total,All admissions considered,19924,3302,16.6,SGA

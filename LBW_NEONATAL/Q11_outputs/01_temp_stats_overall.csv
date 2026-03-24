@@ -1,0 +1,12 @@
+category,n_total,n_missing,n_analyzed,pct_missing,mean_temp,sd_temp,n_hypo_severe,n_hypo_mod,n_hypo_mild,pct_hypo_severe,pct_hypo_mod,pct_any_hypo,facility,classification,explanation
+ELBW,827,169,658,20.4,35.99,1.21,10,194,137,1.5,29.5,51.8,Overall,Birthweight,NA
+VLBW,3169,863,2306,27.2,36.2,0.95,2,625,464,0.1,27.1,47.3,Overall,Birthweight,NA
+LBW,9000,1896,7104,21.1,36.59,0.71,3,848,969,0,11.9,25.6,Overall,Birthweight,NA
+NBW,16363,3484,12879,21.3,36.84,0.64,1,548,1131,0,4.3,13,Overall,Birthweight,NA
+HBW,987,96,891,9.7,36.84,0.44,0,18,64,0,2,9.2,Overall,Birthweight,NA
+Total,30346,6508,23838,21.4,36.68,0.74,16,2233,2765,0.1,9.4,21,Overall,Birthweight,All admissions considered
+Term-AGA,12462,2821,9641,22.6,36.85,0.62,0,375,816,0,3.9,12.4,Overall,SGA,NA
+Term-SGA,6213,1088,5125,17.5,36.78,0.65,2,271,487,0,5.3,14.8,Overall,SGA,NA
+Preterm-AGA,7985,1659,6326,20.8,36.46,0.85,10,1099,1015,0.2,17.4,33.6,Overall,SGA,NA
+Preterm-SGA,3686,940,2746,25.5,36.41,0.85,4,488,447,0.1,17.8,34.2,Overall,SGA,NA
+Total,30346,6508,23838,21.4,36.68,0.74,16,2233,2765,0.1,9.4,21,Overall,SGA,All admissions considered

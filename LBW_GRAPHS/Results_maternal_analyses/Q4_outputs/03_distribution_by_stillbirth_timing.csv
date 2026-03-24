@@ -1,0 +1,20 @@
+sb_timing,category,explanation,n,percentage,classification
+Early stillbirth (22-27+6w),ELBW,Included in analysis,531,82.8393135725429,Birthweight
+Early stillbirth (22-27+6w),VLBW,Included in analysis,93,14.508580343213728,Birthweight
+Early stillbirth (22-27+6w),LBW,Included in analysis,16,2.49609984399376,Birthweight
+Early stillbirth (22-27+6w),HBW,Included in analysis,1,0.15600624024961,Birthweight
+Early stillbirth (22-27+6w),Total,All deliveries considered,641,100,Birthweight
+Late stillbirth (>=28w),ELBW,Included in analysis,272,8.564231738035264,Birthweight
+Late stillbirth (>=28w),VLBW,Included in analysis,466,14.672544080604533,Birthweight
+Late stillbirth (>=28w),LBW,Included in analysis,1022,32.17884130982368,Birthweight
+Late stillbirth (>=28w),NBW,Included in analysis,1366,43.01007556675063,Birthweight
+Late stillbirth (>=28w),HBW,Included in analysis,50,1.5743073047858942,Birthweight
+Late stillbirth (>=28w),Total,All deliveries considered,3176,100,Birthweight
+Early stillbirth (22-27+6w),Preterm-AGA,Included in analysis,355,55.38221528861155,SGA
+Early stillbirth (22-27+6w),Preterm-SGA,Included in analysis,286,44.61778471138845,SGA
+Early stillbirth (22-27+6w),Total,All deliveries considered,641,100,SGA
+Late stillbirth (>=28w),Term-AGA,Included in analysis,829,26.102015113350124,SGA
+Late stillbirth (>=28w),Term-SGA,Included in analysis,578,18.198992443324936,SGA
+Late stillbirth (>=28w),Preterm-AGA,Included in analysis,1067,33.595717884130984,SGA
+Late stillbirth (>=28w),Preterm-SGA,Included in analysis,702,22.103274559193956,SGA
+Late stillbirth (>=28w),Total,All deliveries considered,3176,100,SGA

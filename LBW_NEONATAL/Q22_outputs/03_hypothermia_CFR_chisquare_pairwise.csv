@@ -1,0 +1,19 @@
+facility,classification,category,exposure_variable,comparison,group1,group2,n_group1,NND_group1,CFR_group1_pct,n_group2,NND_group2,CFR_group2_pct,chisq_statistic,chisq_df,chisq_p_value,fisher_p_raw,n_pairs_tested,fisher_p_bonferroni,low_expected_count_warning
+KCH,Birthweight,ELBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),158,129,81.6,44,30,68.2,3.7233,1,0.053658,0.062482,1,0.062482,FALSE
+KCH,Birthweight,HBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),25,1,4,60,3,5,0.0394,1,0.842753,1,1,1,TRUE
+KCH,Birthweight,LBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),907,93,10.3,720,58,8.1,2.3032,1,0.129108,0.143692,1,0.143692,FALSE
+KCH,Birthweight,NBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),435,36,8.3,699,35,5,4.8814,1,0.027148,0.031878,1,0.031878,FALSE
+KCH,Birthweight,VLBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),623,234,37.6,244,68,27.9,7.2545,1,0.007072,0.007082,1,0.007082,FALSE
+KCH,SGA,Preterm-AGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),1213,276,22.8,791,108,13.7,25.5954,1,0,0,1,0,FALSE
+KCH,SGA,Preterm-SGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),459,174,37.9,228,53,23.2,14.8033,1,1.19e-4,1.05e-4,1,1.05e-4,FALSE
+KCH,SGA,Term-AGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),335,24,7.2,590,24,4.1,4.164,1,0.041293,0.045641,1,0.045641,FALSE
+KCH,SGA,Term-SGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),141,19,13.5,158,9,5.7,5.3121,1,0.021178,0.027822,1,0.027822,FALSE
+SMCH,Birthweight,ELBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),183,170,92.9,273,225,82.4,10.3814,1,0.001273,0.001162,1,0.001162,FALSE
+SMCH,Birthweight,HBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),57,3,5.3,749,17,2.3,1.9615,1,0.161353,0.162476,1,0.162476,TRUE
+SMCH,Birthweight,LBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),913,245,26.8,4564,753,16.5,54.5439,1,0,0,1,0,FALSE
+SMCH,Birthweight,NBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),1245,222,17.8,10500,860,8.2,123.6903,1,0,0,1,0,FALSE
+SMCH,Birthweight,VLBW,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),468,276,59,971,531,54.7,2.358,1,0.124644,0.126308,1,0.126308,FALSE
+SMCH,SGA,Preterm-AGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),911,420,46.1,3411,829,24.3,166.2843,1,0,0,1,0,FALSE
+SMCH,SGA,Preterm-SGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),480,227,47.3,1579,501,31.7,39.0069,1,0,0,1,0,FALSE
+SMCH,SGA,Term-AGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),856,145,16.9,7860,544,6.9,106.4179,1,0,0,1,0,FALSE
+SMCH,SGA,Term-SGA,Hypothermia Status,Hypothermia (Yes) vs. No Hypothermia (No),Hypothermia (Yes),No Hypothermia (No),619,124,20,4207,512,12.2,29.1513,1,0,0,1,0,FALSE

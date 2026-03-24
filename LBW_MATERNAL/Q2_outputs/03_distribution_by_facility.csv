@@ -1,0 +1,23 @@
+facility,category,explanation,n,percentage,classification
+KCH,ELBW,Included in analysis,195,2.6715988491574185,Birthweight
+KCH,VLBW,Included in analysis,746,10.220578161391972,Birthweight
+KCH,LBW,Included in analysis,2153,29.497191396081657,Birthweight
+KCH,NBW,Included in analysis,4056,55.56925606247432,Birthweight
+KCH,HBW,Included in analysis,149,2.041375530894643,Birthweight
+KCH,Total,All deliveries considered,7299,100,Birthweight
+SMCH,ELBW,Included in analysis,1397,2.0996152458819286,Birthweight
+SMCH,VLBW,Included in analysis,1455,2.1867861007574847,Birthweight
+SMCH,LBW,Included in analysis,9030,13.571600336659854,Birthweight
+SMCH,NBW,Included in analysis,53476,80.37152819526273,Birthweight
+SMCH,HBW,Included in analysis,1178,1.7704701214380183,Birthweight
+SMCH,Total,All deliveries considered,66536,100,Birthweight
+KCH,Term-AGA,Included in analysis,3035,41.58103849842444,SGA
+KCH,Term-SGA,Included in analysis,895,12.261953692286614,SGA
+KCH,Preterm-AGA,Included in analysis,2769,37.93670365803535,SGA
+KCH,Preterm-SGA,Included in analysis,600,8.220304151253597,SGA
+KCH,Total,All deliveries considered,7299,100,SGA
+SMCH,Term-AGA,Included in analysis,38048,57.1840807983648,SGA
+SMCH,Term-SGA,Included in analysis,17348,26.073103282433568,SGA
+SMCH,Preterm-AGA,Included in analysis,8259,12.412829145124443,SGA
+SMCH,Preterm-SGA,Included in analysis,2881,4.329986774077192,SGA
+SMCH,Total,All deliveries considered,66536,100,SGA

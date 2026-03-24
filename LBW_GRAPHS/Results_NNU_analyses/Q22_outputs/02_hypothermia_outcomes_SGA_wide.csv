@@ -1,0 +1,7 @@
+facility,hypothermia_group,Term-AGA_NND,Term-AGA_DC,Term-SGA_NND,Term-SGA_DC,Preterm-AGA_NND,Preterm-AGA_DC,Preterm-SGA_NND,Preterm-SGA_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Hypothermia (Yes),24,311,19,122,276,937,174,285,0,0,0,0,0,0,0,0,493,1655,SGA
+KCH,No Hypothermia (No),24,566,9,149,108,683,53,175,0,0,0,0,0,0,0,0,194,1573,SGA
+KCH,Missing,367,2454,200,888,425,1233,285,655,0,0,0,0,0,0,0,0,1277,5230,SGA
+SMCH,Hypothermia (Yes),145,711,124,495,420,491,227,253,0,0,0,0,0,0,0,0,916,1950,SGA
+SMCH,No Hypothermia (No),544,7316,512,3695,829,2582,501,1078,0,0,0,0,0,0,0,0,2386,14671,SGA
+SMCH,Missing,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,SGA

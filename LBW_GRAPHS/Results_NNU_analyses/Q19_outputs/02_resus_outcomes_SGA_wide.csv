@@ -1,0 +1,11 @@
+facility,resus_category,Term-AGA_NND,Term-AGA_DC,Term-SGA_NND,Term-SGA_DC,Preterm-AGA_NND,Preterm-AGA_DC,Preterm-SGA_NND,Preterm-SGA_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Cardiopulmonary Resuscitation,10,28,3,17,21,8,16,13,0,0,0,0,0,0,0,0,50,66,SGA
+KCH,Bag Valve Mask,107,351,40,112,209,377,108,130,0,0,0,0,0,0,0,0,464,970,SGA
+KCH,Stimulation/Oxygen,102,1328,69,434,358,1675,227,563,0,0,0,0,0,0,0,0,756,4000,SGA
+KCH,None,43,502,27,186,55,274,38,106,0,0,0,0,0,0,0,0,163,1068,SGA
+KCH,Unknown,153,1122,89,410,166,519,123,303,0,0,0,0,0,0,0,0,531,2354,SGA
+SMCH,Cardiopulmonary Resuscitation,69,54,41,27,50,13,15,6,0,0,0,0,0,0,0,0,175,100,SGA
+SMCH,Bag Valve Mask,211,629,118,338,190,183,109,45,0,0,0,0,0,0,0,0,628,1195,SGA
+SMCH,Stimulation/Oxygen,231,2338,213,1410,467,932,280,404,0,0,0,0,0,0,0,0,1191,5084,SGA
+SMCH,None,158,4702,230,2258,470,1791,276,813,0,0,0,0,0,0,0,0,1134,9564,SGA
+SMCH,Unknown,20,304,34,157,72,155,48,63,0,0,0,0,0,0,0,0,174,679,SGA

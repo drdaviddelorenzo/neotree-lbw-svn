@@ -1,8 +1,0 @@
-description,n,pct_of_total
-Total newborn admissions,35220,100
-Admissions with valid birthweight (LBW sample),34995,99.4
-Discarded for LBW (Missing/invalid birthweight),225,0.6
-Admissions with valid SGA classification,34528,98
-Discarded for SGA (Missing BW),220,0.6
-Discarded for SGA (Missing GA),467,1.3
-Discarded for SGA (Missing both BW and GA),5,0

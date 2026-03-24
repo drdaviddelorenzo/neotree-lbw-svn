@@ -1,0 +1,23 @@
+facility,category,explanation,n,total_facility,percentage,classification
+KCH,ELBW,Included in analysis,151,2912,5.2,Birthweight
+KCH,VLBW,Included in analysis,645,2912,22.1,Birthweight
+KCH,LBW,Included in analysis,1164,2912,40,Birthweight
+KCH,NBW,Included in analysis,896,2912,30.8,Birthweight
+KCH,HBW,Included in analysis,56,2912,1.9,Birthweight
+KCH,Total,All admissions considered,2912,2912,100,Birthweight
+SMCH,ELBW,Included in analysis,104,5135,2,Birthweight
+SMCH,VLBW,Included in analysis,356,5135,6.9,Birthweight
+SMCH,LBW,Included in analysis,1476,5135,28.7,Birthweight
+SMCH,NBW,Included in analysis,2955,5135,57.5,Birthweight
+SMCH,HBW,Included in analysis,244,5135,4.8,Birthweight
+SMCH,Total,All admissions considered,5135,5135,100,Birthweight
+KCH,Term-AGA,Included in analysis,720,2912,24.7,SGA
+KCH,Term-SGA,Included in analysis,186,2912,6.4,SGA
+KCH,Preterm-AGA,Included in analysis,1512,2912,51.9,SGA
+KCH,Preterm-SGA,Included in analysis,494,2912,17,SGA
+KCH,Total,All admissions considered,2912,2912,100,SGA
+SMCH,Term-AGA,Included in analysis,2191,5135,42.7,SGA
+SMCH,Term-SGA,Included in analysis,1259,5135,24.5,SGA
+SMCH,Preterm-AGA,Included in analysis,1124,5135,21.9,SGA
+SMCH,Preterm-SGA,Included in analysis,561,5135,10.9,SGA
+SMCH,Total,All admissions considered,5135,5135,100,SGA

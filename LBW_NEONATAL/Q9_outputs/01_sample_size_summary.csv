@@ -1,0 +1,11 @@
+description,n,pct,Filter_notes
+Total newborn admissions,30346,100,NA
+Total neonatal deaths,5250,17.3,"neotreeoutcome %in% c(""NND"", ""NND<24"", ""NND>24"") — BID excluded"
+Admissions with valid birthweight (LBW sample),30346,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+Deaths with valid birthweight,5250,17.3,"is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND neotreeoutcome %in% c(""NND"", ""NND<24"", ""NND>24"") — BID excluded"
+Discarded for LBW (Missing/invalid birthweight),0,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+Admissions with valid SGA classification,30346,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)
+Deaths with valid SGA classification,5250,17.3,"is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category) AND neotreeoutcome %in% c(""NND"", ""NND<24"", ""NND>24"") — BID excluded"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

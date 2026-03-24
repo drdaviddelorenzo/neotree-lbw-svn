@@ -1,0 +1,7 @@
+facility,hypothermia_group,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Hypothermia (Yes),129,29,234,389,93,814,36,399,1,24,0,0,0,0,0,0,0,0,493,1655,Birthweight
+KCH,No Hypothermia (No),30,14,68,176,58,662,35,664,3,57,0,0,0,0,0,0,0,0,194,1573,Birthweight
+KCH,Missing,124,45,301,562,379,1516,466,3018,7,89,0,0,0,0,0,0,0,0,1277,5230,Birthweight
+SMCH,Hypothermia (Yes),170,13,276,192,245,668,222,1023,3,54,0,0,0,0,0,0,0,0,916,1950,Birthweight
+SMCH,No Hypothermia (No),225,48,531,440,753,3811,860,9640,17,732,0,0,0,0,0,0,0,0,2386,14671,Birthweight
+SMCH,Missing,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Birthweight

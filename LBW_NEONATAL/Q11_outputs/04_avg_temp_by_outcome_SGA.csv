@@ -1,0 +1,21 @@
+facility,outcome,category,explanation,n,mean_temp,classification
+KCH,Alive,Term-AGA,Included in analysis,877,36.7,SGA
+KCH,Alive,Term-SGA,Included in analysis,271,36.4,SGA
+KCH,Alive,Preterm-AGA,Included in analysis,1620,36.16,SGA
+KCH,Alive,Preterm-SGA,Included in analysis,460,35.98,SGA
+KCH,Alive,Total,All admissions considered,3228,36.3,SGA
+KCH,Neonatal Death,Term-AGA,Included in analysis,48,36.37,SGA
+KCH,Neonatal Death,Term-SGA,Included in analysis,28,35.84,SGA
+KCH,Neonatal Death,Preterm-AGA,Included in analysis,384,35.57,SGA
+KCH,Neonatal Death,Preterm-SGA,Included in analysis,227,35.48,SGA
+KCH,Neonatal Death,Total,All admissions considered,687,35.61,SGA
+SMCH,Alive,Term-AGA,Included in analysis,8027,36.88,SGA
+SMCH,Alive,Term-SGA,Included in analysis,4190,36.83,SGA
+SMCH,Alive,Preterm-AGA,Included in analysis,3073,36.72,SGA
+SMCH,Alive,Preterm-SGA,Included in analysis,1331,36.66,SGA
+SMCH,Alive,Total,All admissions considered,16621,36.82,SGA
+SMCH,Neonatal Death,Term-AGA,Included in analysis,689,36.69,SGA
+SMCH,Neonatal Death,Term-SGA,Included in analysis,636,36.64,SGA
+SMCH,Neonatal Death,Preterm-AGA,Included in analysis,1249,36.47,SGA
+SMCH,Neonatal Death,Preterm-SGA,Included in analysis,728,36.5,SGA
+SMCH,Neonatal Death,Total,All admissions considered,3302,36.55,SGA

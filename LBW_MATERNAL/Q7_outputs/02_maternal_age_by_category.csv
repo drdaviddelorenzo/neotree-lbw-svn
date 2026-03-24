@@ -1,0 +1,12 @@
+category,explanation,n,mean_age,median_age,sd_age,min_age,max_age,classification
+ELBW,Included in analysis,84,26.3,26,6.6,14,44,Birthweight
+VLBW,Included in analysis,282,27,26,6.4,14,44,Birthweight
+LBW,Included in analysis,1609,26.2,25,7,14,45,Birthweight
+NBW,Included in analysis,8807,26.1,25,6.5,12,47,Birthweight
+HBW,Included in analysis,222,29.7,30,6.3,16,43,Birthweight
+Total,All deliveries considered,11004,26.2,25,6.6,12,47,Birthweight
+Term-AGA,Included in analysis,6437,26.5,26,6.5,14,47,SGA
+Term-SGA,Included in analysis,2619,25.6,24,6.5,13,46,SGA
+Preterm-AGA,Included in analysis,1614,26,25,6.9,12,45,SGA
+Preterm-SGA,Included in analysis,334,27.1,27,6.6,15,45,SGA
+Total,All deliveries considered,11004,26.2,25,6.6,12,47,SGA

@@ -1,0 +1,23 @@
+facility,category,explanation,n,mean_age,median_age,sd_age,min_age,max_age,classification
+KCH,ELBW,Included in analysis,29,28.3,30,6.5,17,44,Birthweight
+KCH,VLBW,Included in analysis,145,27.7,27,6.1,16,40,Birthweight
+KCH,LBW,Included in analysis,548,26.5,26,6.7,15,43,Birthweight
+KCH,NBW,Included in analysis,1041,28.2,29,5.7,12,43,Birthweight
+KCH,HBW,Included in analysis,28,33.2,32.5,4.1,26,40,Birthweight
+KCH,Total,All deliveries considered,1791,143.9,28,6.1,12,44,Birthweight
+SMCH,ELBW,Included in analysis,55,25.3,24,6.5,14,41,Birthweight
+SMCH,VLBW,Included in analysis,137,26.2,26,6.6,14,44,Birthweight
+SMCH,LBW,Included in analysis,1061,26.1,25,7.2,14,45,Birthweight
+SMCH,NBW,Included in analysis,7766,25.8,25,6.6,13,47,Birthweight
+SMCH,HBW,Included in analysis,194,29.2,30,6.4,16,43,Birthweight
+SMCH,Total,All deliveries considered,9213,132.6,25,6.7,13,47,Birthweight
+KCH,Term-AGA,Included in analysis,774,28.9,29,5.6,14,43,SGA
+KCH,Term-SGA,Included in analysis,224,27.8,27,5.9,14,43,SGA
+KCH,Preterm-AGA,Included in analysis,687,26.4,26,6.6,12,44,SGA
+KCH,Preterm-SGA,Included in analysis,106,27.2,27,5.7,17,39,SGA
+KCH,Total,All deliveries considered,1791,110.3,28,6.1,12,44,SGA
+SMCH,Term-AGA,Included in analysis,5663,26.2,25,6.6,14,47,SGA
+SMCH,Term-SGA,Included in analysis,2395,25.4,24,6.6,13,46,SGA
+SMCH,Preterm-AGA,Included in analysis,927,25.7,24,7.1,14,45,SGA
+SMCH,Preterm-SGA,Included in analysis,228,27,26.5,7.1,15,45,SGA
+SMCH,Total,All deliveries considered,9213,104.3,25,6.7,13,47,SGA

@@ -1,0 +1,8 @@
+description,n,pct_of_total,Filter_notes
+Total newborn admissions,30346,100,NA
+Admissions with valid birthweight (LBW sample),30346,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+Discarded for LBW (Missing/invalid birthweight),0,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+Admissions with valid SGA classification,30346,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_status)
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

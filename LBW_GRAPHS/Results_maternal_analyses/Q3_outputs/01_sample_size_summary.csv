@@ -1,0 +1,27 @@
+description,n,percentage_of_total,Filter_notes
+Total deliveries (all births),73835,100,NA
+Total live births,69505,94.1,NA
+Live births with valid birthweight (LBW sample size),69505,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+Discarded for LBW (Missing/invalid birthweight),0,0,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+Live births with valid SGA classification,69505,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 22 wks & gestation <= 42 wks
+Discarded for SGA (Missing BW),0,0,Birth weight invalid / missing
+Discarded for SGA (Missing GA),0,0,Gestational age invalid / missing
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid / missing
+,NA,NA,NA
+KCH - Total deliveries,7299,9.9,NA
+KCH - Live births,6853,93.9,NA
+KCH - LBW sample size,6853,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+KCH - Discarded for LBW,0,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+KCH - SGA sample size,13706,200,NA
+KCH - Discarded for SGA (Missing BW),0,0,Birth weight invalid / missing
+KCH - Discarded for SGA (Missing GA),0,0,Gestational age invalid / missing
+KCH - Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid / missing
+,NA,NA,NA
+SMCH - Total deliveries,66536,90.1,NA
+SMCH - Live births,62652,94.2,NA
+SMCH - LBW sample size,62652,100,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg
+SMCH - Discarded for LBW,0,0,NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+SMCH - SGA sample size,125304,200,NA
+SMCH - Discarded for SGA (Missing BW),0,0,Birth weight invalid / missing
+SMCH - Discarded for SGA (Missing GA),0,0,Gestational age invalid / missing
+SMCH - Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid / missing

@@ -1,0 +1,12 @@
+category,explanation,n,percentage,classification
+ELBW,Included in analysis,1592,2.1561590031827724,Birthweight
+VLBW,Included in analysis,2201,2.980971084174172,Birthweight
+LBW,Included in analysis,11183,15.145933500372452,Birthweight
+NBW,Included in analysis,57532,77.91968578587391,Birthweight
+HBW,Included in analysis,1327,1.7972506263966952,Birthweight
+Total,All deliveries considered,73835,100,Birthweight
+Term-AGA,Included in analysis,41083,55.64163337170719,SGA
+Term-SGA,Included in analysis,18243,24.707794406446805,SGA
+Preterm-AGA,Included in analysis,11028,14.936005959233425,SGA
+Preterm-SGA,Included in analysis,3481,4.714566262612582,SGA
+Total,All deliveries considered,73835,100,SGA

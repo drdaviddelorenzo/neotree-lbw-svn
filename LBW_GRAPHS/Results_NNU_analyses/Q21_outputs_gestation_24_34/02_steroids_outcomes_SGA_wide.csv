@@ -1,0 +1,9 @@
+facility,steroids_group,Term-AGA_NND,Term-AGA_DC,Term-SGA_NND,Term-SGA_DC,Preterm-AGA_NND,Preterm-AGA_DC,Preterm-SGA_NND,Preterm-SGA_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Steroids Used (Y),0,0,0,0,159,609,87,150,0,0,0,0,0,0,0,0,246,759,SGA
+KCH,Steroids Not Used (N),0,0,0,0,295,862,179,293,0,0,0,0,0,0,0,0,474,1155,SGA
+KCH,Unsure (U),0,0,0,0,269,804,145,261,0,0,0,0,0,0,0,0,414,1065,SGA
+KCH,Missing,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,4,SGA
+SMCH,Steroids Used (Y),0,0,0,0,120,283,74,94,0,0,0,0,0,0,0,0,194,377,SGA
+SMCH,Steroids Not Used (N),0,0,0,0,635,1075,291,273,0,0,0,0,0,0,0,0,926,1348,SGA
+SMCH,Unsure (U),0,0,0,0,338,661,170,208,0,0,0,0,0,0,0,0,508,869,SGA
+SMCH,Missing,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,SGA

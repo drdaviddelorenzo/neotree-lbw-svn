@@ -1,0 +1,25 @@
+facility,outcome,category,explanation,n,mean_temp,classification
+KCH,Alive,ELBW,Included in analysis,43,35.78,Birthweight
+KCH,Alive,VLBW,Included in analysis,565,35.85,Birthweight
+KCH,Alive,LBW,Included in analysis,1476,36.21,Birthweight
+KCH,Alive,NBW,Included in analysis,1063,36.64,Birthweight
+KCH,Alive,HBW,Included in analysis,81,36.85,Birthweight
+KCH,Alive,Total,All admissions considered,3228,36.3,Birthweight
+KCH,Neonatal Death,ELBW,Included in analysis,159,35.1,Birthweight
+KCH,Neonatal Death,VLBW,Included in analysis,302,35.51,Birthweight
+KCH,Neonatal Death,LBW,Included in analysis,151,35.99,Birthweight
+KCH,Neonatal Death,NBW,Included in analysis,71,36.31,Birthweight
+KCH,Neonatal Death,HBW,Included in analysis,4,36.5,Birthweight
+KCH,Neonatal Death,Total,All admissions considered,687,35.61,Birthweight
+SMCH,Alive,ELBW,Included in analysis,61,36.64,Birthweight
+SMCH,Alive,VLBW,Included in analysis,632,36.51,Birthweight
+SMCH,Alive,LBW,Included in analysis,4479,36.73,Birthweight
+SMCH,Alive,NBW,Included in analysis,10663,36.88,Birthweight
+SMCH,Alive,HBW,Included in analysis,786,36.84,Birthweight
+SMCH,Alive,Total,All admissions considered,16621,36.82,Birthweight
+SMCH,Neonatal Death,ELBW,Included in analysis,395,36.28,Birthweight
+SMCH,Neonatal Death,VLBW,Included in analysis,807,36.47,Birthweight
+SMCH,Neonatal Death,LBW,Included in analysis,998,36.59,Birthweight
+SMCH,Neonatal Death,NBW,Included in analysis,1082,36.69,Birthweight
+SMCH,Neonatal Death,HBW,Included in analysis,20,36.71,Birthweight
+SMCH,Neonatal Death,Total,All admissions considered,3302,36.55,Birthweight

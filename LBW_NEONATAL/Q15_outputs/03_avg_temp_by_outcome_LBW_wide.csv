@@ -1,0 +1,3 @@
+facility,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,35.1,35.78,35.51,35.85,35.99,36.21,36.31,36.64,36.5,36.85,NA,NA,NA,NA,NA,NA,NA,NA,35.61,36.3,Birthweight
+SMCH,36.28,36.64,36.47,36.51,36.59,36.73,36.69,36.88,36.71,36.84,NA,NA,NA,NA,NA,NA,NA,NA,36.55,36.82,Birthweight

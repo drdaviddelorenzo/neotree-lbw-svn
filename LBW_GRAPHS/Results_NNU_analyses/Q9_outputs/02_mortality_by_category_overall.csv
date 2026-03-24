@@ -1,0 +1,12 @@
+category,explanation,total_admissions,deaths,mortality_rate,classification,facility
+ELBW,Included in analysis,827,677,81.9,Birthweight,Overall
+VLBW,Included in analysis,3169,1409,44.5,Birthweight,Overall
+LBW,Included in analysis,9000,1522,16.9,Birthweight,Overall
+NBW,Included in analysis,16363,1612,9.9,Birthweight,Overall
+HBW,Included in analysis,987,30,3,Birthweight,Overall
+Total,All admissions considered,30346,5250,17.3,Birthweight,Overall
+Term-AGA,Included in analysis,12462,1098,8.8,SGA,Overall
+Term-SGA,Included in analysis,6213,860,13.8,SGA,Overall
+Preterm-AGA,Included in analysis,7985,2055,25.7,SGA,Overall
+Preterm-SGA,Included in analysis,3686,1237,33.6,SGA,Overall
+Total,All admissions considered,30346,5250,17.3,SGA,Overall

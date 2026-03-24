@@ -1,0 +1,37 @@
+facility,category,comparison,group1,group2,CFR_group1_pct,n_group1,NND_group1,CFR_group2_pct,n_group2,NND_group2,fisher_p_raw,n_pairs_tested,fisher_p_bonferroni,chisq_statistic,chisq_df,chisq_p_value,low_expected_count_warning,exposure_variable,classification
+KCH,ELBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),76.5,162,124,77.5,71,55,1,3,1,0.024,2,0.988055,FALSE,Antenatal Steroids,Birthweight
+KCH,ELBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),76.5,162,124,76.9,130,100,1,3,1,0.024,2,0.988055,FALSE,Antenatal Steroids,Birthweight
+KCH,ELBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),77.5,71,55,76.9,130,100,1,3,1,0.024,2,0.988055,FALSE,Antenatal Steroids,Birthweight
+KCH,LBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),14.8,803,119,10.4,531,55,0.0199,3,0.059699,7.396,2,0.024773,FALSE,Antenatal Steroids,Birthweight
+KCH,LBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),14.8,803,119,15.3,758,116,0.831837,3,1,7.396,2,0.024773,FALSE,Antenatal Steroids,Birthweight
+KCH,LBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),10.4,531,55,15.3,758,116,0.009781,3,0.029344,7.396,2,0.024773,FALSE,Antenatal Steroids,Birthweight
+KCH,NBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),13.5,52,7,0,13,0,0.328661,3,0.985984,3.4017,2,0.182524,TRUE,Antenatal Steroids,Birthweight
+KCH,NBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),13.5,52,7,20.5,39,8,0.403901,3,1,3.4017,2,0.182524,TRUE,Antenatal Steroids,Birthweight
+KCH,NBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),0,13,0,20.5,39,8,0.177313,3,0.531939,3.4017,2,0.182524,TRUE,Antenatal Steroids,Birthweight
+KCH,VLBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),36.6,612,224,34.9,390,136,0.589674,3,1,0.6655,2,0.716949,FALSE,Antenatal Steroids,Birthweight
+KCH,VLBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),36.6,612,224,34.4,552,190,0.462034,3,1,0.6655,2,0.716949,FALSE,Antenatal Steroids,Birthweight
+KCH,VLBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),34.9,390,136,34.4,552,190,0.889631,3,1,0.6655,2,0.716949,FALSE,Antenatal Steroids,Birthweight
+KCH,Preterm-AGA,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),25.5,1157,295,20.7,768,159,0.015866,3,0.047598,6.6274,2,0.036381,FALSE,Antenatal Steroids,SGA
+KCH,Preterm-AGA,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),25.5,1157,295,25.1,1073,269,0.845415,3,1,6.6274,2,0.036381,FALSE,Antenatal Steroids,SGA
+KCH,Preterm-AGA,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),20.7,768,159,25.1,1073,269,0.029222,3,0.087666,6.6274,2,0.036381,FALSE,Antenatal Steroids,SGA
+KCH,Preterm-SGA,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),37.9,472,179,36.7,237,87,0.805257,3,1,0.4608,2,0.794219,FALSE,Antenatal Steroids,SGA
+KCH,Preterm-SGA,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),37.9,472,179,35.7,406,145,0.528057,3,1,0.4608,2,0.794219,FALSE,Antenatal Steroids,SGA
+KCH,Preterm-SGA,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),36.7,237,87,35.7,406,145,0.799148,3,1,0.4608,2,0.794219,FALSE,Antenatal Steroids,SGA
+SMCH,ELBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),92.9,255,237,87,46,40,0.230268,3,0.690804,3.3358,2,0.18864,TRUE,Antenatal Steroids,Birthweight
+SMCH,ELBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),92.9,255,237,88.1,126,111,0.123934,3,0.371803,3.3358,2,0.18864,TRUE,Antenatal Steroids,Birthweight
+SMCH,ELBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),87,46,40,88.1,126,111,0.797942,3,1,3.3358,2,0.18864,TRUE,Antenatal Steroids,Birthweight
+SMCH,LBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),22.5,1193,268,15.4,324,50,0.005546,3,0.016637,10.3379,2,0.00569,FALSE,Antenatal Steroids,Birthweight
+SMCH,LBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),22.5,1193,268,18.1,744,135,0.024758,3,0.074274,10.3379,2,0.00569,FALSE,Antenatal Steroids,Birthweight
+SMCH,LBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),15.4,324,50,18.1,744,135,0.292726,3,0.878178,10.3379,2,0.00569,FALSE,Antenatal Steroids,Birthweight
+SMCH,NBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),16,150,24,8.3,12,1,0.693853,3,1,0.8285,2,0.660822,TRUE,Antenatal Steroids,Birthweight
+SMCH,NBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),16,150,24,18.6,70,13,0.699532,3,1,0.8285,2,0.660822,TRUE,Antenatal Steroids,Birthweight
+SMCH,NBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),8.3,12,1,18.6,70,13,0.68064,3,1,0.8285,2,0.660822,TRUE,Antenatal Steroids,Birthweight
+SMCH,VLBW,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),58.7,676,397,54.5,189,103,0.317811,3,0.953434,1.1392,2,0.565741,FALSE,Antenatal Steroids,Birthweight
+SMCH,VLBW,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),58.7,676,397,57.1,436,249,0.618645,3,1,1.1392,2,0.565741,FALSE,Antenatal Steroids,Birthweight
+SMCH,VLBW,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),54.5,189,103,57.1,436,249,0.598427,3,1,1.1392,2,0.565741,FALSE,Antenatal Steroids,Birthweight
+SMCH,Preterm-AGA,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),37.1,1710,635,29.8,403,120,0.00554,3,0.016621,8.8202,2,0.012154,FALSE,Antenatal Steroids,SGA
+SMCH,Preterm-AGA,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),37.1,1710,635,33.8,999,338,0.088839,3,0.266516,8.8202,2,0.012154,FALSE,Antenatal Steroids,SGA
+SMCH,Preterm-AGA,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),29.8,403,120,33.8,999,338,0.148264,3,0.444792,8.8202,2,0.012154,FALSE,Antenatal Steroids,SGA
+SMCH,Preterm-SGA,Steroids Not Used (N) vs. Steroids Used (Y),Steroids Not Used (N),Steroids Used (Y),51.6,564,291,44,168,74,0.095011,3,0.285032,5.341,2,0.069217,FALSE,Antenatal Steroids,SGA
+SMCH,Preterm-SGA,Steroids Not Used (N) vs. Unsure (U),Steroids Not Used (N),Unsure (U),51.6,564,291,45,378,170,0.053772,3,0.161317,5.341,2,0.069217,FALSE,Antenatal Steroids,SGA
+SMCH,Preterm-SGA,Steroids Used (Y) vs. Unsure (U),Steroids Used (Y),Unsure (U),44,168,74,45,378,170,0.852584,3,1,5.341,2,0.069217,FALSE,Antenatal Steroids,SGA

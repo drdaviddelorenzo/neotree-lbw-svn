@@ -1,0 +1,12 @@
+category,explanation,n,total,percentage,classification,facility
+ELBW,Included in analysis,827,30346,2.7,Birthweight,Overall
+VLBW,Included in analysis,3169,30346,10.4,Birthweight,Overall
+LBW,Included in analysis,9000,30346,29.7,Birthweight,Overall
+NBW,Included in analysis,16363,30346,53.9,Birthweight,Overall
+HBW,Included in analysis,987,30346,3.3,Birthweight,Overall
+Total,All admissions considered,30346,30346,100,Birthweight,Overall
+Term-AGA,Included in analysis,12462,30346,41.1,SGA,Overall
+Term-SGA,Included in analysis,6213,30346,20.5,SGA,Overall
+Preterm-AGA,Included in analysis,7985,30346,26.3,SGA,Overall
+Preterm-SGA,Included in analysis,3686,30346,12.1,SGA,Overall
+Total,All admissions considered,30346,30346,100,SGA,Overall

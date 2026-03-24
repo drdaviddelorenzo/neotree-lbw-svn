@@ -1,0 +1,15 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Analysis population (valid outcome),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"")"
+Excluded: missing/invalid outcome,0,0,"NOT (normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death""))"
+Analysis population — Cardiopulmonary Resuscitation,391,1.3,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND grepl(""CPR|CARDIOPULMONARY"", toupper(resus))"
+Analysis population — Bag Valve Mask,3257,10.7,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND grepl(""BVM|BAG|AMBU"", toupper(resus)) — not CPR"
+Analysis population — Stimulation/Oxygen,11031,36.4,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND grepl(""O2|OXYGEN|STIM|SUC"", toupper(resus)) — not BVM/CPR"
+Analysis population — None,11929,39.3,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND toupper(trimws(resus)) %in% c(""NONE"",""N"",""NO"",""NORM"") or grepl(""NOTHING"")"
+Analysis population — Unknown resuscitation,3738,12.3,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND resus is NA/blank/unrecognised — retained as ""Unknown"" in tables"
+Analysis population with valid birthweight (LBW sample),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg"
+Discarded for LBW (missing/invalid birthweight),0,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)"
+Analysis population with valid SGA classification,30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

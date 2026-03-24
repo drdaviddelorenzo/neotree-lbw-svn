@@ -1,0 +1,11 @@
+facility,resus_category,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,Cardiopulmonary Resuscitation,7,2,18,6,11,22,14,36,0,0,0,0,0,0,0,0,0,0,50,66,Birthweight
+KCH,Bag Valve Mask,71,12,152,141,110,359,128,447,3,11,0,0,0,0,0,0,0,0,464,970,Birthweight
+KCH,Stimulation/Oxygen,148,38,262,623,199,1610,141,1629,6,100,0,0,0,0,0,0,0,0,756,4000,Birthweight
+KCH,None,13,12,33,104,57,326,60,603,0,23,0,0,0,0,0,0,0,0,163,1068,Birthweight
+KCH,Unknown,44,24,138,253,153,675,194,1366,2,36,0,0,0,0,0,0,0,0,531,2354,Birthweight
+SMCH,Cardiopulmonary Resuscitation,20,0,15,6,38,19,101,74,1,1,0,0,0,0,0,0,0,0,175,100,Birthweight
+SMCH,Bag Valve Mask,100,1,101,27,116,235,306,905,5,27,0,0,0,0,0,0,0,0,628,1195,Birthweight
+SMCH,Stimulation/Oxygen,182,25,316,209,316,1361,370,3373,7,116,0,0,0,0,0,0,0,0,1191,5084,Birthweight
+SMCH,None,79,26,324,344,457,2687,268,5893,6,614,0,0,0,0,0,0,0,0,1134,9564,Birthweight
+SMCH,Unknown,14,9,51,46,71,178,37,418,1,28,0,0,0,0,0,0,0,0,174,679,Birthweight

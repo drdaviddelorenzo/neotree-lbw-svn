@@ -1,0 +1,13 @@
+facility,hiv_group,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,HIV False (No Test),53,13,94,150,82,332,83,449,1,19,0,0,0,0,0,0,0,0,313,963,Birthweight
+KCH,HIV True (Tested),139,37,282,480,237,1440,268,1872,6,88,0,0,0,0,0,0,0,0,932,3917,Birthweight
+KCH,HIV True & Reactive,9,2,17,27,21,98,12,121,0,5,0,0,0,0,0,0,0,0,59,253,Birthweight
+KCH,HIV True & Non-Reactive,130,35,264,452,214,1341,255,1749,6,83,0,0,0,0,0,0,0,0,869,3660,Birthweight
+KCH,HIV True & Unknown,0,0,1,1,2,1,1,2,0,0,0,0,0,0,0,0,0,0,4,4,Birthweight
+KCH,HIV test NA,91,38,227,497,211,1220,186,1760,4,63,0,0,0,0,0,0,0,0,719,3578,Birthweight
+SMCH,HIV False (No Test),144,8,208,136,141,547,74,704,2,40,0,0,0,0,0,0,0,0,569,1435,Birthweight
+SMCH,HIV True (Tested),251,53,599,496,857,3930,1008,9958,18,746,0,0,0,0,0,0,0,0,2733,15183,Birthweight
+SMCH,HIV True & Reactive,20,5,72,50,80,447,89,916,1,51,0,0,0,0,0,0,0,0,262,1469,Birthweight
+SMCH,HIV True & Non-Reactive,221,47,516,438,768,3449,911,8966,17,693,0,0,0,0,0,0,0,0,2433,13593,Birthweight
+SMCH,HIV True & Unknown,10,1,11,8,9,34,8,76,0,2,0,0,0,0,0,0,0,0,38,121,Birthweight
+SMCH,HIV test NA,0,0,0,0,0,3,0,1,0,0,0,0,0,0,0,0,0,0,0,4,Birthweight

@@ -1,0 +1,12 @@
+category,explanation,n_total,n_inborn,n_outborn,n_unknown,pct_inborn,pct_outborn,pct_unknown,facility,classification
+ELBW,Included in analysis,827,594,233,0,71.8,28.2,0,Overall,Birthweight
+VLBW,Included in analysis,3169,2038,1131,0,64.3,35.7,0,Overall,Birthweight
+LBW,Included in analysis,9000,6228,2771,1,69.2,30.8,0,Overall,Birthweight
+NBW,Included in analysis,16363,11166,5197,0,68.2,31.8,0,Overall,Birthweight
+HBW,Included in analysis,987,834,153,0,84.5,15.5,0,Overall,Birthweight
+Total,All admissions considered,30346,20860,9485,1,68.7,31.3,0,Overall,Birthweight
+Term-AGA,Included in analysis,12462,8442,4020,0,67.7,32.3,0,Overall,SGA
+Term-SGA,Included in analysis,6213,4362,1851,0,70.2,29.8,0,Overall,SGA
+Preterm-AGA,Included in analysis,7985,5639,2345,1,70.6,29.4,0,Overall,SGA
+Preterm-SGA,Included in analysis,3686,2417,1269,0,65.6,34.4,0,Overall,SGA
+Total,All admissions considered,30346,20860,9485,1,68.7,31.3,0,Overall,SGA

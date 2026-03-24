@@ -1,0 +1,7 @@
+scope,classification,chi_sq,df,p_value,significant
+Global,Birthweight,77.722,16,0,TRUE
+Global,SGA,114.292,12,0,TRUE
+KCH,Birthweight,24.763,16,0.07411,FALSE
+KCH,SGA,33.295,12,8.7e-4,TRUE
+SMCH,Birthweight,79.597,16,0,TRUE
+SMCH,SGA,90.129,12,0,TRUE

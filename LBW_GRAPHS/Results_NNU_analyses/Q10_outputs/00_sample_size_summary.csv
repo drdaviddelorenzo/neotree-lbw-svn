@@ -1,0 +1,10 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Survivors (Alive),25080,82.6,"normalise_outcome(neotreeoutcome) == ""Alive"""
+Survivors with valid LOS,24705,81.4,"normalise_outcome(neotreeoutcome) == ""Alive"" AND is.finite(los_days) & los_days >= 0"
+Excluded LOS outliers (> 180 days),179,0.6,"normalise_outcome(neotreeoutcome) == ""Alive"" AND is.finite(los_days) & los_days >= 0 AND los_days > 180 days"
+Final sample analyzed,24526,80.8,"normalise_outcome(neotreeoutcome) == ""Alive"" AND is.finite(los_days) & los_days >= 0 & los_days <= 180 days"
+Discarded for LBW (missing/invalid birthweight) — survivors,0,0,Survivor with valid LOS but: NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)
+Discarded for SGA (Missing BW) — survivors,0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA) — survivors,0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA) — survivors,0,0,Both BW and GA invalid/missing

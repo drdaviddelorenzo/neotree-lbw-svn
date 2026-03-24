@@ -1,0 +1,45 @@
+Figure Reference & Statistical Representations
+Below is a detailed explanation of what is represented in each graph, the breakdown of their multi-panel layouts, and the statistical reasoning behind their visual components.
+
+---
+
+### Figure 1: SVN Prevalence in Zimbabwe Births
+**Purpose:** To show the overall prevalence and outcomes of SVN categories across all recorded maternal deliveries.
+*   **Panel A (Overall Prevalence):** A stacked bar chart visualizing the overarching breakdown of births (Term AGA vs. various SGA bounds). Stacked bars are used here because they perfectly represent parts-of-a-whole up to 100%.
+*   **Panel B (Perinatal Mortality Rates):** A dot plot with 95% Wilson Confidence Intervals. The **Wilson method** is explicitly used for calculating the error bars because it behaves correctly for highly asymmetrical binomial proportions (e.g., mortality rates that are naturally bounded at 0%).
+*   **Panels C & D (Stillbirth & END Rates):** Breakdowns of mortality into late stillbirth and early neonatal death rates respectively. A standard bar chart is used rather than dots to allow for easy cross-comparison of raw magnitude between categories.
+*   **Panels E & F (Attributable Fractions):** Visualized as pie charts. Because attributable fraction is purely a percentage share of total deaths, pie charts remain the most universally understood representation of categorical shares.
+
+### Figure 2: Stillbirth Risk (Lancet-style) — Zimbabwe
+**Purpose:** Displays the relative odds of stillbirth (Odds Ratios) when compared against the baseline reference group (Term AGA).
+*   **Visual Style:** Designed as a dot-and-whisker forest plot (common in epidemiology). It plots the Odds Ratio as a point estimate, with error bars representing the 95% Confidence Interval. 
+*   **Why this representation?** Stillbirth occurrences are extremely sparse in some categories. Explicitly graphing the confidence intervals as error lines allows the viewer to instantly see the statistical uncertainty (the width of the line) without guessing. 
+
+### Figure 3: NNU SVN Prevalence & Characteristics
+**Purpose:** Details the breakdown of neonates admitted specifically to the Neonatal Units (NNUs) at KCH and SMCH.
+*   **Panels A & B (Admissions by Category):** Standard grouped bar charts mapping percentages (Panel A) and absolute counts (Panel B).
+*   **Panel C (In-facility Survival):** 100% stacked bar chart. This is chosen to immediately contrast the binary outcomes (Survived vs Death) purely by proportion, ignoring the vast differences in sample size.
+*   **Panel D (Facility Comparison):** A horizontal dot plot (lollipop style) plotting SVN groups on the X-axis and percentages on the Y-axis. Dodged points are used rather than bars to prevent visual clutter when directly overlaying two independent facilities.
+
+### Figure 4: Length of Stay (LOS) by SVN Group
+**Purpose:** To analyze how long surviving infants remain admitted in the NNU before discharge.
+*   *Note: There are two output versions of this graph.*
+*   **Why two versions?** Length of Stay data is notoriously right-skewed (a few infants stay for months, warping the Mean). While scientists historically asked for **Mean ± Standard Deviation (SD)** (which is what `fig4_length_of_stay.pdf` produces), standard deviation assumes a bell-curve and often results in impossible negative error bars. The statistically superior method is the **Median and Interquartile Range (IQR)** (produced by `fig4_length_of_stay_MEDIAN_IQR.pdf`), which ignores massive outliers.
+*   **Panel C (Comparison):** A dodged lollipop chart graphing the Median with the IQR acting as the vertical error bar. This allows for clean, head-to-head facility comparison without overlapping wide, messy bars.
+
+### Figure 5: Case Fatality Rates (CFR)
+**Purpose:** Explores in-facility neonatal mortality rates exclusively for admitted infants.
+*   **Panels A (Distribution):** A 100% stacked bar chart breaking down the mortality makeup by day of death.
+*   **Panel B (Overall CFR):** A dot plot with 95% Wilson Confidence Intervals. Similar to Figure 1, the Wilson score interval is the mathematical standard for binomial proportions close to 0 or 100.
+*   **Panel C (Absolute Mortality Counts):** A stacked column chart. Raw numbers are plotted here (rather than percentages) because a facility might have a high *rate* but a very small *absolute* number of deaths. 
+*   **Panel D (Mortality Odds Ratio):** A forest plot identical to Figure 2. The Y-axis values are plotted on a **Logarithmic Scale**. This is customary for Odds Ratios because it visually equalizes the distance between "half the risk" (0.5) and "double the risk" (2.0). If a linear scale were used, risk increases would look drastically larger than risk decreases.
+
+### Figure 6: Day of Death by SVN Group
+**Purpose:** Shows exactly when mortality occurs to help target interventions.
+*   **Panels A & B:** Area-fill line charts comparing cumulative mortality across the first 28 days.
+*   **Panels C & D (Categorical Time Bands):** 100% stacked bar charts. This forces every categorical column to be equal height, cleanly visualizing the shift in death timing (e.g. Day 0-1 vs Day 7-28) regardless of how many infants actually died in each category.
+
+### Figure 7: Risk Factors (Hypothermia & Antenatal Steroids)
+**Purpose:** Shows the prevalence and mortality impact of specific secondary risk factors.
+*   **Panels A & C (Risk Factor Prevalence):** Clustered bar charts.
+*   **Panels B & D (Mortality impact by Risk Factor):** Stacked bar charts showcasing absolute death counts against survivorship, with Wilson Confidence Interval dot plots overlaid on a secondary axis. This dual-axis approach (spatially separated) allows viewers to correlate the absolute volume of a problem against its statistical lethality in one cohesive panel.

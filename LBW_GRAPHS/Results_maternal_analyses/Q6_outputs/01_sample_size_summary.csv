@@ -1,0 +1,10 @@
+description,n,Filter_notes,pct_of_total
+Total deliveries,73835,All records,100
+Records with valid season (date available),73835,!is.na(dateadmission) & dateadmission parses to a valid date,100
+Records missing date (excluded),0,dateadmission missing or unparseable,0
+Deliveries with valid birthweight (LBW sample),73835,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg,100
+Discarded for LBW (missing/invalid birthweight),0,is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg,0
+Deliveries with valid SGA classification,73835,BW valid AND !is.na(gestation) & gestation >= 22 wks & gestation <= 42 wks,100
+Discarded for SGA (missing BW),0,Birth weight invalid / missing,0
+Discarded for SGA (missing GA),0,Gestational age invalid / missing,0
+Discarded for SGA (missing both BW and GA),0,Both BW and GA invalid / missing,0

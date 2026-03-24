@@ -1,0 +1,11 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Analysis population (valid outcome AND valid maternal age),26133,86.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(mat_age_val) & mat_age_val >= 10 yrs & mat_age_val <= 60 yrs"
+Excluded: missing/invalid outcome,0,0,"NOT (normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death""))"
+Excluded: missing/invalid maternal age,4213,13.9,NOT (is.finite(mat_age_val) & mat_age_val >= 10 yrs & mat_age_val <= 60 yrs)
+Analysis population with valid birthweight (LBW sample),26133,86.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(mat_age_val) & mat_age_val >= 10 yrs & mat_age_val <= 60 yrs AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg"
+Discarded for LBW (missing/invalid birthweight),0,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(mat_age_val) & mat_age_val >= 10 yrs & mat_age_val <= 60 yrs AND NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)"
+Analysis population with valid SGA classification,26133,86.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(mat_age_val) & mat_age_val >= 10 yrs & mat_age_val <= 60 yrs AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

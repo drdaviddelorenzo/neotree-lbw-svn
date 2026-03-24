@@ -1,0 +1,17 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Analysis population (valid outcome),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"")"
+Excluded: missing/invalid outcome,0,0,"NOT (normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death""))"
+HIV group: HIV False (No Test)  [norm_bool(mathivtest) == FALSE],3280,10.8,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND norm_bool(mathivtest) == FALSE"
+HIV group: HIV True (Tested)  [norm_bool(mathivtest) == TRUE],22765,75,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND norm_bool(mathivtest) == TRUE"
+"HIV group: HIV True & Reactive  [tested == TRUE & hivtestresult == ""R""]",2043,6.7,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND tested == TRUE & result_norm == ""Reactive"""
+"HIV group: HIV True & Non-Reactive  [tested == TRUE & hivtestresult == ""NR""]",20555,67.7,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND tested == TRUE & result_norm == ""Non-Reactive"""
+HIV group: HIV True & Unknown result  [tested == TRUE & result_norm is Unknown/NA],167,0.6,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND tested == TRUE & (result_norm == ""Unknown"" | is.na(result_norm))"
+HIV group: HIV test NA  [is.na(norm_bool(mathivtest))],4301,14.2,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.na(norm_bool(mathivtest))"
+NOTE: HIV True sub-groups (Reactive/Non-Reactive/Unknown) sum to HIV True (Tested) — groups are NOT mutually exclusive,NA,NA,NA
+Analysis population with valid birthweight (LBW sample),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg"
+Discarded for LBW (missing/invalid birthweight),0,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)"
+Analysis population with valid SGA classification,30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

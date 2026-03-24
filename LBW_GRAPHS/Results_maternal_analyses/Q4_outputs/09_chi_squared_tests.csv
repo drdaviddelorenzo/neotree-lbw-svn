@@ -1,0 +1,7 @@
+test_name,scope,sb_scope,x_squared,df,p_value,significant
+LBW Categories,Global,All stillbirths,10826.977,4,0,Yes
+SGA Categories,Global,All stillbirths,6321.275,3,0,Yes
+LBW Categories,KCH,All stillbirths,336.229,4,1.6479999999999996e-71,Yes
+SGA Categories,KCH,All stillbirths,222.661,3,5.339e-48,Yes
+LBW Categories,SMCH,All stillbirths,11305.423,4,0,Yes
+SGA Categories,SMCH,All stillbirths,6574.938,3,0,Yes

@@ -1,9 +1,0 @@
-facility,gender_interval,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
-KCH,Male,129,24,278,465,275,1455,319,2308,8,106,15,49,0,0,0,0,0,0,1024,4407,Birthweight
-KCH,Female,163,58,322,652,254,1522,224,1763,4,66,13,32,0,0,0,0,0,0,980,4093,Birthweight
-KCH,Unsure,1,0,0,0,3,7,0,7,0,0,1,2,0,0,0,0,0,0,5,16,Birthweight
-KCH,Missing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Birthweight
-SMCH,Male,236,33,430,280,551,2234,695,6469,14,588,8,45,0,0,0,0,0,0,1934,9649,Birthweight
-SMCH,Female,274,28,404,364,477,2385,449,4800,11,287,6,31,0,0,0,0,0,0,1621,7895,Birthweight
-SMCH,Unsure,0,0,2,1,8,8,1,22,0,0,0,1,0,0,0,0,0,0,11,32,Birthweight
-SMCH,Missing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Birthweight

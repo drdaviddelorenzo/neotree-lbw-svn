@@ -1,0 +1,73 @@
+scope,sb_scope,comparison,category,reference,n_total,n_outcome,OR,CI_lower,CI_upper,p_value,significant
+Global,All stillbirths,LBW category vs NBW,ELBW,NBW,73322,3817,54.252,48.197,61.067,0,Yes
+Global,All stillbirths,LBW category vs NBW,HBW,NBW,73322,3817,1.643,1.235,2.185,6e-4,Yes
+Global,All stillbirths,LBW category vs NBW,LBW,NBW,73322,3817,4.212,3.875,4.578,0,Yes
+Global,All stillbirths,LBW category vs NBW,VLBW,NBW,73322,3817,14.206,12.724,15.861,0,Yes
+Global,All stillbirths,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,73322,3817,7.263,6.648,7.936,0,Yes
+Global,All stillbirths,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,73322,3817,20.065,18.135,22.201,0,Yes
+Global,All stillbirths,SGA category vs Term-AGA,Term-SGA,Term-AGA,73322,3817,1.591,1.428,1.772,0,Yes
+Global,All stillbirths,Preterm vs Term,Preterm,Term,73322,3817,8.335,7.782,8.928,0,Yes
+KCH,All stillbirths,LBW category vs NBW,ELBW,NBW,7290,437,13.135,9.05,19.063,0,Yes
+KCH,All stillbirths,LBW category vs NBW,HBW,NBW,7290,437,1.234,0.496,3.07,0.6511,No
+KCH,All stillbirths,LBW category vs NBW,LBW,NBW,7290,437,2.853,2.226,3.656,0,Yes
+KCH,All stillbirths,LBW category vs NBW,VLBW,NBW,7290,437,6.176,4.683,8.145,0,Yes
+KCH,All stillbirths,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,7290,437,4.366,3.303,5.772,0,Yes
+KCH,All stillbirths,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,7290,437,8.539,6.139,11.877,0,Yes
+KCH,All stillbirths,SGA category vs Term-AGA,Term-SGA,Term-AGA,7290,437,1.97,1.307,2.971,0.0012,Yes
+KCH,All stillbirths,Preterm vs Term,Preterm,Term,7290,437,4.156,3.313,5.214,0,Yes
+SMCH,All stillbirths,LBW category vs NBW,ELBW,NBW,66032,3380,66.555,58.543,75.663,0,Yes
+SMCH,All stillbirths,LBW category vs NBW,HBW,NBW,66032,3380,1.691,1.252,2.282,6e-4,Yes
+SMCH,All stillbirths,LBW category vs NBW,LBW,NBW,66032,3380,4.491,4.107,4.911,0,Yes
+SMCH,All stillbirths,LBW category vs NBW,VLBW,NBW,66032,3380,19.016,16.782,21.547,0,Yes
+SMCH,All stillbirths,SGA category vs Term-AGA,Preterm-AGA,Term-AGA,66032,3380,8.261,7.516,9.081,0,Yes
+SMCH,All stillbirths,SGA category vs Term-AGA,Preterm-SGA,Term-AGA,66032,3380,23.127,20.778,25.742,0,Yes
+SMCH,All stillbirths,SGA category vs Term-AGA,Term-SGA,Term-AGA,66032,3380,1.573,1.407,1.758,0,Yes
+SMCH,All stillbirths,Preterm vs Term,Preterm,Term,66032,3380,9.701,9.02,10.434,0,Yes
+Global,Early stillbirth (22-27+6w),LBW category vs NBW,ELBW,NBW,70146,641,15039569806.895,0,1557601261784168e281,0.9444,No
+Global,Early stillbirth (22-27+6w),LBW category vs NBW,HBW,NBW,70146,641,13504172.172,0,1402658751294155e278,0.961,No
+Global,Early stillbirth (22-27+6w),LBW category vs NBW,LBW,NBW,70146,641,27217130.355,0,28192788037472426e277,0.9594,No
+Global,Early stillbirth (22-27+6w),LBW category vs NBW,VLBW,NBW,70146,641,990834055.389,0,1026199342849869e280,0.9508,No
+Global,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,70146,641,236774557.51,0,18991158351005415e197,0.9362,No
+Global,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,70146,641,758447799.158,0,6083364990850829e198,0.9323,No
+Global,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Term-SGA,Term-AGA,70146,641,1,0,Inf,1,No
+Global,Early stillbirth (22-27+6w),Preterm vs Term,Preterm,Term,70146,641,341611137.83,0,24441133684899245e163,0.922,No
+KCH,Early stillbirth (22-27+6w),LBW category vs NBW,ELBW,NBW,6888,35,2736258441.061,0,Inf,0.9863,No
+KCH,Early stillbirth (22-27+6w),LBW category vs NBW,HBW,NBW,6888,35,1,0,Inf,1,No
+KCH,Early stillbirth (22-27+6w),LBW category vs NBW,LBW,NBW,6888,35,1,0,Inf,1,No
+KCH,Early stillbirth (22-27+6w),LBW category vs NBW,VLBW,NBW,6888,35,352495163.239,0,Inf,0.9876,No
+KCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,6888,35,65094950.903,0,Inf,0.9838,No
+KCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,6888,35,112977916.775,0,Inf,0.9833,No
+KCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Term-SGA,Term-AGA,6888,35,1,0,Inf,1,No
+KCH,Early stillbirth (22-27+6w),Preterm vs Term,Preterm,Term,6888,35,73056977.935,0,Inf,0.9815,No
+SMCH,Early stillbirth (22-27+6w),LBW category vs NBW,ELBW,NBW,63258,606,18667469462.397,0,8728467706606787e291,0.9459,No
+SMCH,Early stillbirth (22-27+6w),LBW category vs NBW,HBW,NBW,63258,606,15229638.832,0,7141006199509845e288,0.9622,No
+SMCH,Early stillbirth (22-27+6w),LBW category vs NBW,LBW,NBW,63258,606,33916369.941,0,15861103139292195e288,0.9603,No
+SMCH,Early stillbirth (22-27+6w),LBW category vs NBW,VLBW,NBW,63258,606,1403992062.455,0,65649091026418625e289,0.9518,No
+SMCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,63258,606,299118084.096,0,26317856820413247e205,0.9378,No
+SMCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,63258,606,931329165.824,0,8194315568077616e206,0.9342,No
+SMCH,Early stillbirth (22-27+6w),SGA category vs Term-AGA,Term-SGA,Term-AGA,63258,606,1,0,Inf,1,No
+SMCH,Early stillbirth (22-27+6w),Preterm vs Term,Preterm,Term,63258,606,433685980.167,0,2900816312210763e170,0.9237,No
+Global,Late stillbirth (>=28w),LBW category vs NBW,ELBW,NBW,72681,3176,18.377,15.773,21.41,0,Yes
+Global,Late stillbirth (>=28w),LBW category vs NBW,HBW,NBW,72681,3176,1.611,1.208,2.147,0.0012,Yes
+Global,Late stillbirth (>=28w),LBW category vs NBW,LBW,NBW,72681,3176,4.147,3.814,4.509,0,Yes
+Global,Late stillbirth (>=28w),LBW category vs NBW,VLBW,NBW,72681,3176,11.843,10.543,13.303,0,Yes
+Global,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,72681,3176,5.45,4.964,5.984,0,Yes
+Global,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,72681,3176,14.257,12.789,15.894,0,Yes
+Global,Late stillbirth (>=28w),SGA category vs Term-AGA,Term-SGA,Term-AGA,72681,3176,1.591,1.428,1.772,0,Yes
+Global,Late stillbirth (>=28w),Preterm vs Term,Preterm,Term,72681,3176,6.118,5.689,6.58,0,Yes
+KCH,Late stillbirth (>=28w),LBW category vs NBW,ELBW,NBW,7255,402,7.469,4.798,11.627,0,Yes
+KCH,Late stillbirth (>=28w),LBW category vs NBW,HBW,NBW,7255,402,1.234,0.496,3.07,0.6511,No
+KCH,Late stillbirth (>=28w),LBW category vs NBW,LBW,NBW,7255,402,2.853,2.226,3.656,0,Yes
+KCH,Late stillbirth (>=28w),LBW category vs NBW,VLBW,NBW,7255,402,5.446,4.095,7.243,0,Yes
+KCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,7255,402,3.895,2.937,5.167,0,Yes
+KCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,7255,402,7.721,5.515,10.81,0,Yes
+KCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Term-SGA,Term-AGA,7255,402,1.97,1.307,2.971,0.0012,Yes
+KCH,Late stillbirth (>=28w),Preterm vs Term,Preterm,Term,7255,402,3.722,2.958,4.683,0,Yes
+SMCH,Late stillbirth (>=28w),LBW category vs NBW,ELBW,NBW,65426,2774,21.506,18.239,25.359,0,Yes
+SMCH,Late stillbirth (>=28w),LBW category vs NBW,HBW,NBW,65426,2774,1.654,1.221,2.24,0.0011,Yes
+SMCH,Late stillbirth (>=28w),LBW category vs NBW,LBW,NBW,65426,2774,4.41,4.031,4.824,0,Yes
+SMCH,Late stillbirth (>=28w),LBW category vs NBW,VLBW,NBW,65426,2774,15.628,13.693,17.836,0,Yes
+SMCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-AGA,Term-AGA,65426,2774,5.96,5.388,6.593,0,Yes
+SMCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Preterm-SGA,Term-AGA,65426,2774,15.961,14.216,17.92,0,Yes
+SMCH,Late stillbirth (>=28w),SGA category vs Term-AGA,Term-SGA,Term-AGA,65426,2774,1.573,1.407,1.758,0,Yes
+SMCH,Late stillbirth (>=28w),Preterm vs Term,Preterm,Term,65426,2774,6.868,6.353,7.424,0,Yes

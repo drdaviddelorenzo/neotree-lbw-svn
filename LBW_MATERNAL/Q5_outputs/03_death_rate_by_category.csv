@@ -1,0 +1,12 @@
+category,explanation,n_total_births,n_ennd,pct_ennd_of_births,classification
+ELBW,Included in analysis,1397,51,3.65,Birthweight
+VLBW,Included in analysis,1455,11,0.76,Birthweight
+LBW,Included in analysis,9030,51,0.56,Birthweight
+NBW,Included in analysis,53476,239,0.45,Birthweight
+HBW,Included in analysis,1178,5,0.42,Birthweight
+Total,All deliveries considered,66536,357,0.54,Birthweight
+Term-AGA,Included in analysis,38048,167,0.44,SGA
+Term-SGA,Included in analysis,17348,95,0.55,SGA
+Preterm-AGA,Included in analysis,8259,52,0.63,SGA
+Preterm-SGA,Included in analysis,2881,43,1.49,SGA
+Total,All deliveries considered,66536,357,0.54,SGA

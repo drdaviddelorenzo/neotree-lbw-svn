@@ -1,0 +1,22 @@
+description,n,pct_of_total,Filter_notes
+Total admissions,30346,100,NA
+Analysis population (valid outcome),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"")"
+Excluded: missing/invalid outcome,0,0,"NOT (normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death""))"
+Analysis population — Steroids Used (Y),2017,6.6,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND steroids == 'Y'"
+Analysis population — Steroids Not Used (N),19167,63.2,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND steroids == 'N'"
+Analysis population — Unsure (U),9140,30.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND steroids == 'U'"
+Analysis population — Missing steroids record,22,0.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND steroids is NA/blank/other"
+Analysis population (KCH) — Steroids Used (Y),1200,4,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'KCH' AND steroids == 'Y'"
+Analysis population (KCH) — Steroids Not Used (N),5787,19.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'KCH' AND steroids == 'N'"
+Analysis population (KCH) — Unsure (U),3424,11.3,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'KCH' AND steroids == 'U'"
+Analysis population (KCH) — Missing steroids record,11,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'KCH' AND steroids is Missing"
+Analysis population (SMCH) — Steroids Used (Y),817,2.7,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'SMCH' AND steroids == 'Y'"
+Analysis population (SMCH) — Steroids Not Used (N),13380,44.1,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'SMCH' AND steroids == 'N'"
+Analysis population (SMCH) — Unsure (U),5716,18.8,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'SMCH' AND steroids == 'U'"
+Analysis population (SMCH) — Missing steroids record,11,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND facility == 'SMCH' AND steroids is Missing"
+Analysis population with valid birthweight (LBW sample),30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg"
+Discarded for LBW (missing/invalid birthweight),0,0,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND NOT (is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg)"
+Analysis population with valid SGA classification,30346,100,"normalise_outcome(neotreeoutcome) %in% c(""Alive"", ""Neonatal Death"") AND is.finite(bw_kg) & bw_kg >= 0.3 kg & bw_kg <= 7.0 kg AND !is.na(gestation) & gestation >= 24 wks & gestation <= 42 wks AND !is.na(sga_category)"
+Discarded for SGA (Missing BW),0,0,Invalid/missing birth weight
+Discarded for SGA (Missing GA),0,0,Invalid/missing gestational age
+Discarded for SGA (Missing both BW and GA),0,0,Both BW and GA invalid/missing

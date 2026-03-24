@@ -1,0 +1,17 @@
+facility,mod_interval,ELBW_NND,ELBW_DC,VLBW_NND,VLBW_DC,LBW_NND,LBW_DC,NBW_NND,NBW_DC,HBW_NND,HBW_DC,Discarded_NND,Discarded_DC,Missing BW_NND,Missing BW_DC,Missing GA_NND,Missing GA_DC,Missing both BW and GA_NND,Missing both BW and GA_DC,Total_NND,Total_DC,classification
+KCH,SVD,184,52,398,690,369,1774,374,2496,3,73,0,0,0,0,0,0,0,0,1328,5085,Birthweight
+KCH,Vacuum Extraction,1,1,1,4,0,24,14,165,1,7,0,0,0,0,0,0,0,0,17,201,Birthweight
+KCH,Forceps Extraction,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,Birthweight
+KCH,ELCS,7,4,13,39,19,137,21,298,1,29,0,0,0,0,0,0,0,0,61,507,Birthweight
+KCH,EMCS,77,27,148,331,115,948,117,1060,6,61,0,0,0,0,0,0,0,0,463,2427,Birthweight
+KCH,Breech Extraction,13,3,41,60,26,98,7,44,0,0,0,0,0,0,0,0,0,0,87,205,Birthweight
+KCH,Induced Vaginal,1,0,2,3,1,8,2,11,0,0,0,0,0,0,0,0,0,0,6,22,Birthweight
+KCH,Missing,0,1,0,0,0,3,2,5,0,0,0,0,0,0,0,0,0,0,2,9,Birthweight
+SMCH,SVD,322,44,590,433,748,2839,803,7127,12,474,0,0,0,0,0,0,0,0,2475,10917,Birthweight
+SMCH,Vacuum Extraction,0,0,0,1,1,4,6,24,0,0,0,0,0,0,0,0,0,0,7,29,Birthweight
+SMCH,Forceps Extraction,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,Birthweight
+SMCH,ELCS,2,4,14,19,33,277,34,761,3,103,0,0,0,0,0,0,0,0,86,1164,Birthweight
+SMCH,EMCS,61,10,182,158,188,1238,205,2415,3,191,0,0,0,0,0,0,0,0,639,4012,Birthweight
+SMCH,Breech Extraction,4,2,9,10,13,49,11,73,1,2,0,0,0,0,0,0,0,0,38,136,Birthweight
+SMCH,Induced Vaginal,4,1,7,8,10,47,18,216,1,11,0,0,0,0,0,0,0,0,40,283,Birthweight
+SMCH,Missing,2,0,5,2,5,26,5,46,0,5,0,0,0,0,0,0,0,0,17,79,Birthweight
